@@ -5,6 +5,8 @@ on:
     paths: ["_data/**", "scripts/**"]
   push:
     branches: [main]
+  schedule:
+    - cron: "0 6 * * 1"
 
 jobs:
   validate:
@@ -14,6 +16,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install pyyaml requests pytest
+      - run: python -m pip install pyyaml pytest
       - run: python -m pytest tests/ -q
+      - run: python scripts/validate_data.py
+
+  # Some official sites 403 non-browser clients, so URL reachability is
+  # informational only and never blocks a PR.
+  check-urls:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pyyaml requests
       - run: python scripts/validate_data.py --check-urls

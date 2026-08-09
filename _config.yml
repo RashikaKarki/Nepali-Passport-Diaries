@@ -4,7 +4,7 @@ description: >-
   Verified visa information for Nepali passport holders — visa-free,
   visa on arrival, eVisa, and extra access with US, Schengen, Japan,
   UK, Canada, or Australia visas.
-repo: https://github.com/CHANGE-ME/nepali-passport-diaries
+repo: https://github.com/RashikaKarki/Nepali-Passport-Diaries
 
 exclude:
   - Gemfile
