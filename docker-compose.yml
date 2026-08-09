@@ -1,0 +1,13 @@
+services:
+  site:
+    build: .
+    ports:
+      - "127.0.0.1:5000:5000"
+    volumes:
+      - .:/srv/jekyll
+      - jekyll-cache:/srv/jekyll/.jekyll-cache
+      - site-output:/srv/jekyll/_site
+
+volumes:
+  jekyll-cache:
+  site-output:

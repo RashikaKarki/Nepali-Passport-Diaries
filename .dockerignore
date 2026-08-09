@@ -1,0 +1,12 @@
+_site/
+.jekyll-cache/
+.git/
+.github/
+.claude/
+.gitignore
+Dockerfile
+docker-compose.yml
+README.md
+CONTRIBUTING.md
+DATA_POLICY.md
+tests/
