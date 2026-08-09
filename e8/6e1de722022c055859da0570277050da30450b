@@ -1,0 +1,19 @@
+_layouts/default.html
+  s_cc41572e05fb5e::t_e9e10da621d7f4 8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e86e1de722022c055859da0570277050da30450b",
+  "prompts": {},
+  "sessions": {
+    "s_cc41572e05fb5e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c5b23ffa-4827-4b6c-925a-f12f23b58270",
+        "model": "composer-2.5"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
