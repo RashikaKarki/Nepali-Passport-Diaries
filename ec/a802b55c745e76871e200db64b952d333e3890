@@ -1,0 +1,42 @@
+.github/workflows/validate.yml
+  s_35f8cbcb46aeea::t_f36e562ab13097 8-9,19,21-33
+scripts/issue_to_pr.py
+  s_d174f84798dbda::t_55bd617c92401c 1-93
+DATA_POLICY.md
+  s_d174f84798dbda::t_fded5485c8ff94 1-6,10-13,21-23,33,36,38,52-59,64-67,69,81-82,87-88
+  s_35f8cbcb46aeea::t_f4193f52b2b8eb 7-9,14-20,24-32,34-35,37,39-51,60-63,68,70-80,83-86
+.github/workflows/issue-to-pr.yml
+  s_d174f84798dbda::t_4029f3fda8865d 1-52
+CONTRIBUTING.md
+  s_d174f84798dbda::t_052991aa3f660c 1-78
+LICENSE
+  s_d174f84798dbda::t_9c2c6b56108173 1-27
+.github/ISSUE_TEMPLATE/config.yml
+  s_35f8cbcb46aeea::t_3975ca57621079 4
+_config.yml
+  s_35f8cbcb46aeea::t_30b9586ce8578f 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "eca802b55c745e76871e200db64b952d333e3890",
+  "prompts": {},
+  "sessions": {
+    "s_35f8cbcb46aeea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc16cfaa-9677-4aa1-828e-b495316089bb",
+        "model": "claude-fable-5"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    },
+    "s_d174f84798dbda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b1d4fec3-19a0-4131-a33e-302a8de54946",
+        "model": "claude-fable-5"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
