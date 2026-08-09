@@ -5,6 +5,7 @@ description: >-
   visa on arrival, eVisa, and extra access with US, Schengen, Japan,
   UK, Canada, or Australia visas.
 repo: https://github.com/RashikaKarki/Nepali-Passport-Diaries
+url: https://nepalipassportdiaries.therashverse.com
 
 exclude:
   - Gemfile
