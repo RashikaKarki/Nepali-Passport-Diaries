@@ -32,7 +32,7 @@ jobs:
             Automated PR from #${{ github.event.issue.number }}.
 
             Closes #${{ github.event.issue.number }}
-      - uses: actions/github-script@v7
+      - uses: actions/github-script@v9
         with:
           script: |
             const pr = "${{ steps.pr.outputs.pull-request-url }}";
@@ -42,7 +42,7 @@ jobs:
               body: `Thanks! I opened a pull request from this submission: ${pr}. A maintainer will review it against the official source.`,
             });
       - if: failure()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             await github.rest.issues.createComment({
