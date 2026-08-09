@@ -1,0 +1,23 @@
+docker-compose.yml
+  s_35f8cbcb46aeea::t_7b6a31cf5e64e4 1-13
+.dockerignore
+  s_35f8cbcb46aeea::t_5cea6e8c6c9f9f 1-12
+Dockerfile
+  s_35f8cbcb46aeea::t_1b22b433f39dae 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e49cdb5649a1074f631e86610816853a5e9321c9",
+  "prompts": {},
+  "sessions": {
+    "s_35f8cbcb46aeea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc16cfaa-9677-4aa1-828e-b495316089bb",
+        "model": "claude-fable-5"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
