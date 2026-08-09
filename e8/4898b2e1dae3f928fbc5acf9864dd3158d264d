@@ -1,0 +1,21 @@
+.github/dependabot.yml
+  s_35f8cbcb46aeea::t_0a44f183fd7e5b 1-10
+.github/workflows/issue-to-pr.yml
+  s_35f8cbcb46aeea::t_02507afce6cc0a 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e84898b2e1dae3f928fbc5acf9864dd3158d264d",
+  "prompts": {},
+  "sessions": {
+    "s_35f8cbcb46aeea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc16cfaa-9677-4aa1-828e-b495316089bb",
+        "model": "claude-fable-5"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
