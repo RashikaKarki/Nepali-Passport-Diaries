@@ -1,0 +1,21 @@
+name: Report an error
+description: Something on the site is wrong and you don't have the corrected details.
+title: "Error: <country>"
+labels: [error-report]
+body:
+  - type: input
+    id: country
+    attributes:
+      label: Country
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What seems wrong
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Link that contradicts the site (if any)

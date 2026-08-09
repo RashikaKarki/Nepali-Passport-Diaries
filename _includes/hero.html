@@ -1,0 +1,10 @@
+{% assign all_entries = site.data.visa_free | concat: site.data.visa_on_arrival | concat: site.data.evisa | concat: site.data.special_cases %}
+{% assign verified_dates = all_entries | map: "verified" | compact %}
+{% assign checked_dates = all_entries | map: "checked" | compact %}
+{% assign latest = verified_dates | concat: checked_dates | sort | last %}
+<header class="hero">
+  <p class="kicker">Est. 2026 · Kathmandu</p>
+  <h1>{{ site.title }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+  <p class="asof">Every entry verified against an official source · as of {{ latest | date: "%B %Y" }}</p>
+</header>

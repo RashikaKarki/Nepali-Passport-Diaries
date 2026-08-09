@@ -1,0 +1,19 @@
+title: The Nepali Passport Diaries
+tagline: A field guide to every border that will let you in.
+description: >-
+  Verified visa information for Nepali passport holders — visa-free,
+  visa on arrival, eVisa, and extra access with US, Schengen, Japan,
+  UK, Canada, or Australia visas.
+repo: https://github.com/CHANGE-ME/nepali-passport-diaries
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - tests
+  - docs
+  - README.md
+  - CONTRIBUTING.md
+  - DATA_POLICY.md
+  - LICENSE

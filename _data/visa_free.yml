@@ -1,0 +1,234 @@
+# visa_free.yml — Destinations Nepali passport holders can enter without obtaining a visa
+
+- country: India
+  iso: IN
+  region: Asia
+  status: freedom_of_movement
+  duration: Unlimited (live and work)
+  conditions:
+    - No passport/visa needed at the open border; carry citizenship certificate, voter ID, or passport
+    - Flying requires an approved photo ID (passport or Nepali citizenship certificate)
+  legal_basis: 1950 Indo-Nepal Treaty of Peace and Friendship
+  source:
+    name: Ministry of External Affairs, India — Indo-Nepal Treaty
+    url: https://mea.gov.in/bilateral-documents.htm?dtl/6295/Treaty+of+Peace+and+Friendship
+  confidence: high
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Singapore
+  iso: SG
+  region: Asia
+  status: visa_free
+  duration: Typically 30 days (social visit pass, exact stay set by ICA officer on the e-Pass)
+  conditions:
+    - Passport valid ≥ 6 months
+    - Submit the SG Arrival Card (SGAC) online within 3 days before arrival — free, at ica.gov.sg (beware paid third-party sites)
+    - Onward/return ticket, proof of funds and accommodation; entry is at officer's discretion
+  proof:
+    nepal_explicitly_named: false  # proof by omission from ICA's exhaustive visa-required list
+    url: https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements
+    evidence: >
+      ICA's official "Check if You Need an Entry Visa" page enumerates every nationality
+      that requires a Singapore visa (Afghanistan, Bangladesh, India, Pakistan, etc.) —
+      Nepal does NOT appear on the list, and under ICA's framework travellers not on the
+      list are visa-exempt for short visits. Multiple 2025–2026 sources confirm 30-day
+      visa-free entry for Nepali passports with the SG Arrival Card.
+  notes: >
+    This reflects a change — Nepal was previously on Singapore's visa-required
+    (assessment-level) list, and some Nepal-based agency websites still describe the old
+    SGD 30 agent-based visa process. Before booking, re-check the ICA page above and/or
+    run your passport through ICA's official e-Service; if the ICA list ever re-adds
+    Nepal, the agent/e-visa route applies again.
+  source:
+    name: Immigration & Checkpoints Authority (ICA), Singapore — visa requirements
+    url: https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Philippines
+  iso: PH
+  region: Asia
+  status: visa_free
+  duration: 30 days (extendable in-country at the Bureau of Immigration)
+  conditions:
+    - Passport valid ≥ 6 months beyond stay
+    - Return or onward ticket within the 30-day limit (strictly checked at check-in)
+    - Complete the free eTravel registration (etravel.gov.ph) before departure
+    - Proof of funds may be requested
+  proof:
+    nepal_explicitly_named: true
+    url: https://www.vinavisas.com/philippines-tourist-visa-exemption/npl-nepal
+    evidence: >
+      Nepal appears on the Philippine DFA's executive-order list of nationalities that may
+      enter without a visa for stays up to 30 days. Multiple current (2026) sources —
+      including DFA-derived exemption lists and Nepal-specific travel guidance — uniformly
+      confirm 30-day visa-free entry for Nepali passports with onward ticket + eTravel.
+    secondary_url: https://visitworld.today/philippines/nepal-citizenship/travel
+  source:
+    name: Philippine Department of Foreign Affairs — visa-free entry guidelines
+    url: https://dfa.gov.ph/list-of-countries-for-21-day-visa
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Micronesia (Federated States)
+  iso: FM
+  region: Oceania
+  status: visa_free
+  duration: 30 days (extendable in-country up to 60 days)
+  conditions:
+    - Passport valid ≥ 120 days beyond entry
+    - Onward/return ticket; FSM arrival/departure record completed via carrier
+  proof:
+    nepal_explicitly_named: false  # universal policy covers Nepal
+    url: https://en.wikipedia.org/wiki/Visa_policy_of_Micronesia
+    evidence: >
+      FSM policy (per its official visitor guidance) requires no visa for tourists of ANY
+      nationality staying 30 days or less — only a valid passport (120+ days) and onward
+      ticket — extendable to 60 days. A universal policy that covers Nepali passports.
+  source:
+    name: FSM Division of Immigration
+    url: https://gov.fm/index.php/component/content/article/35-fsm-government/executive/94-immigration
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Cook Islands
+  iso: CK
+  region: Oceania
+  status: visa_free
+  duration: 31 days (visitor permit granted on arrival, all nationalities)
+  conditions:
+    - Onward/return ticket and confirmed accommodation
+    - Passport valid ≥ 6 months
+  source:
+    name: Cook Islands Immigration
+    url: https://immigration.gov.ck/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Niue
+  iso: NU
+  region: Oceania
+  status: visa_free
+  duration: 30 days
+  conditions:
+    - Onward/return ticket and accommodation
+    - Entry is via New Zealand — you will need NZ transit/visitor visa to route through Auckland
+  source:
+    name: Niue Immigration
+    url: https://www.gov.nu/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Dominica
+  iso: DM
+  region: Caribbean
+  status: visa_free
+  duration: 21 days (extendable locally; some nationalities get longer)
+  conditions:
+    - Onward/return ticket, proof of funds and accommodation
+  proof:
+    nepal_explicitly_named: true
+    url: https://en.wikipedia.org/wiki/Visa_policy_of_Dominica
+    evidence: >
+      Dominica's visa policy requires visas ONLY from Dominican Republic and Haiti
+      nationals — everyone else, including Nepal, enters visa-free (Nepal in the 21-day
+      tier). Nepal is also explicitly named on Dominica visa-free lists (2026), and
+      other passports' Timatic-derived tables show the same "Dominica — visa not
+      required, 21 days" treatment.
+  source:
+    name: Government of Dominica — Immigration
+    url: https://dominica.gov.dm/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Haiti
+  iso: HT
+  region: Caribbean
+  status: visa_free
+  duration: Up to 90 days
+  conditions:
+    - Tourist fee payable on arrival
+  notes: Severe security crisis; most governments advise against all travel to Haiti.
+  source:
+    name: Government of Haiti / IATA Timatic via airline check-in
+    url: https://www.iatatravelcentre.com/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Barbados
+  iso: BB
+  region: Caribbean
+  status: visa_free
+  duration: Up to 90 days (per Passport Index; officer's discretion)
+  conditions:
+    - Onward/return ticket, funds, accommodation
+  proof:
+    nepal_explicitly_named: true
+    url: https://en.wikipedia.org/wiki/Visa_requirements_for_Nepalese_citizens
+    evidence: >
+      Wikipedia's Nepal-specific requirements table (2026, Timatic/official-cited) lists
+      Barbados as "Visa not required — 90 days" for Nepali passports, agreeing with
+      Passport Index and other aggregators.
+  source:
+    name: Barbados Ministry of Foreign Affairs — visa requirements
+    url: https://www.foreign.gov.bb/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: The Gambia
+  iso: GM
+  region: Africa
+  status: visa_free
+  duration: Up to 90 days (entry stamp on arrival)
+  conditions:
+    - Onward/return ticket and proof of funds recommended
+    - Confirm the reported "entry clearance" practice with Gambia Immigration or your airline before flying
+  proof:
+    nepal_explicitly_named: true
+    url: https://leaftravelsandtour.com/visa-guide-nepali-passport-holders-2026/
+    evidence: >
+      Recent (Jan 2026) Nepal-based travel guidance and multiple 2026 aggregators
+      consistently list The Gambia as visa-free for Nepali passports for up to 90 days.
+      No official Gambian government page naming Nepal was located, so this rests on
+      concordant recent secondary sources only.
+  notes: Some travellers report an "entry clearance" requirement arranged via airline/host.
+    Confirm with Gambia Immigration or your airline (IATA Timatic) before flying.
+  source:
+    name: Gambia Immigration Department
+    url: https://www.gid.gov.gm/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Palestinian Territories
+  iso: PS
+  region: Middle East
+  status: visa_free_nominal
+  duration: Nominally visa-free (Palestinian Authority imposes no visa on Nepali passports)
+  conditions:
+    - "PRACTICAL WARNING: there is no independent international entry point — access to the
+      West Bank runs through Israeli-controlled borders and Israel DOES require a visa for
+      Nepali citizens, so the exemption is largely theoretical without an Israeli visa"
+    - Gaza is not accessible to tourists
+  proof:
+    nepal_explicitly_named: false
+    url: https://www.passportindex.org/
+    evidence: >
+      Passport Index (Aug 2026) lists the Palestinian Territories as visa-free for Nepal;
+      this reflects PA policy only, not the Israeli entry visa actually needed to reach
+      the territory.
+  source:
+    name: Passport Index (Timatic-derived)
+    url: https://www.passportindex.org/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true

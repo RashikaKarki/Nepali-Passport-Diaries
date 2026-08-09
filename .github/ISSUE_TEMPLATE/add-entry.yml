@@ -1,0 +1,131 @@
+name: Add a destination
+description: Submit a new destination — a bot will turn this into a pull request.
+title: "Add: <country>"
+labels: [entry-submission]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Every fact must come from an **official government source** (immigration
+        department, ministry, embassy). See DATA_POLICY.md. A bot converts this
+        form into a pull request for maintainer review.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Visa-free
+        - Visa on arrival
+        - eVisa
+        - Special case (extra access with another country's visa)
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: Thailand
+    validations:
+      required: true
+  - type: input
+    id: iso
+    attributes:
+      label: ISO code
+      description: Two-letter ISO 3166-1 code, uppercase.
+      placeholder: TH
+    validations:
+      required: true
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      options: [Africa, Americas, Asia, Caribbean, Europe, Middle East, Oceania]
+    validations:
+      required: true
+  - type: input
+    id: duration
+    attributes:
+      label: Duration
+      placeholder: 15 days
+    validations:
+      required: true
+  - type: input
+    id: fee
+    attributes:
+      label: Fee
+      placeholder: "THB 2,000 (cash only)"
+  - type: textarea
+    id: conditions
+    attributes:
+      label: Conditions (one per line)
+      placeholder: |
+        Passport valid ≥ 6 months
+        Confirmed return or onward ticket
+    validations:
+      required: true
+  - type: input
+    id: extension
+    attributes:
+      label: Extension
+      placeholder: Not extendable
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+  - type: input
+    id: source_name
+    attributes:
+      label: Official source name
+      placeholder: Thai Immigration Bureau
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Official source URL
+      description: Must be an official government page, https only.
+      placeholder: https://www.immigration.go.th/en
+    validations:
+      required: true
+  - type: input
+    id: verified
+    attributes:
+      label: Date you verified (YYYY-MM-DD)
+      placeholder: "2026-08-08"
+    validations:
+      required: true
+  - type: input
+    id: requires
+    attributes:
+      label: Requires (special cases only)
+      placeholder: Valid US B1/B2 visa
+  - type: input
+    id: benefit
+    attributes:
+      label: Benefit (special cases only)
+      placeholder: Enter without a local visa for up to 180 days
+  - type: checkboxes
+    id: held_visas
+    attributes:
+      label: Held visas (special cases only)
+      options:
+        - label: US
+        - label: Schengen
+        - label: Japan
+        - label: UK
+        - label: Canada
+        - label: Australia
+        - label: New Zealand
+        - label: Ireland
+        - label: South Korea
+        - label: Israel
+        - label: UAE
+        - label: Saudi Arabia
+        - label: GCC
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Accuracy confirmation
+      options:
+        - label: I checked this information on the official source linked above, on the date given.
+          required: true

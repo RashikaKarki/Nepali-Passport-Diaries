@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% include hero.html %}
+{% include controls.html %}
+
+<main class="cards" id="cards">
+  {% for entry in site.data.visa_free %}{% include card.html entry=entry category="visa_free" label="Visa-free" %}{% endfor %}
+  {% for entry in site.data.visa_on_arrival %}{% include card.html entry=entry category="visa_on_arrival" label="On arrival" %}{% endfor %}
+  {% for entry in site.data.evisa %}{% include card.html entry=entry category="evisa" label="eVisa" %}{% endfor %}
+  {% for entry in site.data.special_cases %}{% include card.html entry=entry category="special" label="With visa" %}{% endfor %}
+  <p class="empty" id="empty" hidden>No destinations match — try a different search.</p>
+</main>
+
+{% include site-footer.html %}

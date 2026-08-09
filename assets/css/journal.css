@@ -1,0 +1,318 @@
+:root {
+  --paper: #faf6ee;
+  --card: #fffdf7;
+  --ink: #2b2417;
+  --ink-soft: #6e6248;
+  --tan: #d8cdb4;
+  --tan-shadow: #e5dcc6;
+  --gold: #6d5f40;
+  --crimson: #c8102e;
+  --stamp-visa-free: #1e6e46;
+  --stamp-on-arrival: #c8102e;
+  --stamp-evisa: #2b4a8b;
+  --stamp-special: #6b3fa0;
+  --serif: "Playfair Display", Georgia, serif;
+  --mono: "DM Mono", "Courier New", monospace;
+  --text-2xs: 9px;
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-md: 13px;
+  --text-lg: 14px;
+  --text-xl: 17px;
+  --text-2xl: 18px;
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--mono);
+  line-height: 1.5;
+}
+
+a { color: var(--gold); }
+
+:focus-visible {
+  outline: 2px solid var(--crimson);
+  outline-offset: 2px;
+}
+
+.kicker,
+.asof,
+.tab,
+.stamp,
+.summary-line,
+.card-detail h4,
+.provenance {
+  text-transform: uppercase;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 24px 32px;
+  text-align: center;
+  border-bottom: 3px double var(--tan);
+}
+
+.kicker {
+  margin: 0;
+  color: var(--gold);
+  font-size: var(--text-sm);
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 12px 0 8px;
+  font-family: var(--serif);
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.15;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--text-2xl);
+}
+
+.asof {
+  margin-top: 16px;
+  color: var(--gold);
+  font-size: var(--text-sm);
+  letter-spacing: 1px;
+}
+
+.controls {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tabs {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  border: none;
+  background: none;
+  padding: 4px 0;
+  font-family: var(--mono);
+  font-size: var(--text-md);
+  letter-spacing: 1px;
+  color: var(--ink-soft);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--crimson);
+}
+
+.refine {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search,
+.region {
+  font-family: var(--mono);
+  font-size: var(--text-lg);
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--tan);
+  padding: 10px 14px;
+}
+
+.search { flex: 1; min-width: 220px; }
+
+.visa-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-family: var(--mono);
+  font-size: var(--text-sm);
+  padding: 5px 14px;
+  background: var(--card);
+  border: 1px solid var(--tan);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.chip.is-active {
+  border-color: var(--crimson);
+  color: var(--crimson);
+}
+
+.cards {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8px 24px 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--tan);
+  box-shadow: 2px 2px 0 var(--tan-shadow);
+}
+
+.card summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "flag country stamp" "line line line";
+  align-items: center;
+  gap: 4px 10px;
+}
+
+.card summary::-webkit-details-marker { display: none; }
+
+.flag { grid-area: flag; font-size: 20px; }
+
+.country {
+  grid-area: country;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: var(--text-xl);
+}
+
+.stamp {
+  grid-area: stamp;
+  font-size: var(--text-2xs);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 5px 10px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  transform: rotate(6deg);
+}
+
+.stamp--visa_free { color: var(--stamp-visa-free); }
+.stamp--visa_on_arrival { color: var(--stamp-on-arrival); }
+.stamp--evisa { color: var(--stamp-evisa); }
+.stamp--special { color: var(--stamp-special); }
+.stamp--warning { color: var(--ink-soft); border-style: dashed; transform: rotate(-6deg); }
+
+.summary-line {
+  grid-area: line;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.card-detail {
+  padding: 0 16px 16px;
+  border-top: 1px dashed var(--tan);
+  font-size: var(--text-md);
+  color: var(--ink-soft);
+}
+
+.card-detail h4 {
+  margin: 14px 0 6px;
+  color: var(--ink);
+  font-size: var(--text-xs);
+  letter-spacing: 2px;
+}
+
+.card-detail ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.card-detail li { margin: 4px 0; }
+
+.pairing {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  background: var(--paper);
+  border: 1px dashed var(--tan);
+  color: var(--ink);
+}
+
+.evidence {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: var(--paper);
+  border-left: 3px solid var(--tan);
+}
+
+.evidence h4 { margin-top: 0; }
+
+.named {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--tan);
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.named--yes {
+  color: var(--stamp-visa-free);
+  border-color: var(--stamp-visa-free);
+}
+
+.provenance {
+  margin-top: 14px;
+  font-size: var(--text-xs);
+  letter-spacing: 0.5px;
+}
+
+.suggest {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: var(--text-sm);
+  color: var(--crimson);
+}
+
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--ink-soft);
+  padding: 40px 0;
+}
+
+.site-footer {
+  border-top: 3px double var(--tan);
+  padding: 32px 24px 48px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.disclaimer {
+  max-width: 520px;
+  margin: 0 auto 12px;
+  font-style: italic;
+  font-family: var(--serif);
+  font-size: var(--text-lg);
+}
+
+.license { color: var(--gold); }
+
+@media (max-width: 560px) {
+  .cards { grid-template-columns: 1fr; }
+}

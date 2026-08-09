@@ -1,0 +1,438 @@
+# visa_on_arrival.yml — Destinations issuing a visa/permit ON ARRIVAL to Nepali passport holders
+
+- country: Maldives
+  iso: MV
+  region: Asia
+  status: visa_on_arrival
+  duration: 30 days
+  fee: Free
+  conditions:
+    - Passport/travel document valid ≥ 1 month (6 months recommended)
+    - Confirmed accommodation and sufficient funds
+    - Complete the IMUGA "Traveller Declaration" online within 96 hours before arrival
+  extension: Extendable in-country up to 90 days total
+  source:
+    name: Maldives Immigration (IMUGA)
+    url: https://imuga.immigration.gov.mv/
+  proof:
+    nepal_explicitly_named: false  # covered by an explicit ALL-nationalities policy
+    url: https://www.immigration.gov.mv/visa/tourist-visa
+    evidence: >
+      Maldives Immigration (official) states the tourist visa is granted on arrival with no
+      pre-approval; the Maldives MFA (foreign.gov.mv) states it is "granted for all
+      nationalities on arrival" (Israeli passports excepted since Apr 2025), which covers
+      Nepali passports.
+    secondary_url: https://foreign.gov.mv/index.php/en/consular/for-foreigners-visiting-maldives/maldives-visa
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Cambodia
+  iso: KH
+  region: Asia
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "USD 30 (tourist T-visa) + possible processing"
+  conditions:
+    - Passport valid ≥ 6 months, one blank page, passport photo
+    - Mandatory Cambodia e-Arrival Card (arrival.gov.kh) before arrival — free, required for ALL air arrivals
+    - eVisa alternative available online (STRONGLY recommended for Nepali passports — see notes)
+  notes: >
+    Conflicting recent guidance: general sources (VisitWorld, Apr 2026) say VOA is available
+    to Nepali citizens at Phnom Penh/Siem Reap airports and land borders, but Aug 2026
+    Nepal-specific guidance referencing Cambodia's Honorary Consulate in Kathmandu warns
+    Nepali applicants face extra scrutiny (~10 working days eVisa processing vs 3 for
+    others) and advises NOT to rely on VOA. Get the T-class eVisa before booking.
+  proof:
+    nepal_explicitly_named: true
+    url: https://visitworld.today/cambodia/nepal-citizenship/travel
+    evidence: >
+      Nepal-specific 2026 guidance confirms visitors from Nepal can generally obtain a visa
+      on arrival at Phnom Penh and Siem Reap airports and at land checkpoints, with the
+      official eVisa (evisa.gov.kh) as the safer alternative; the e-Arrival Card became
+      mandatory for all international visitors from July 2024.
+  extension: Extendable once in-country
+  source:
+    name: Cambodia eVisa (Ministry of Foreign Affairs)
+    url: https://www.evisa.gov.kh/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Laos
+  iso: LA
+  region: Asia
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "USD 30–45 VOA (cash) / USD 50 eVisa"
+  conditions:
+    - Available at Vientiane, Luang Prabang, Pakse airports, 4 Thai–Lao Friendship Bridges and 7 land crossings only
+    - Passport photo + USD cash; eVisa alternative at laoevisa.gov.la
+  proof:
+    nepal_explicitly_named: false  # proof by omission from the Lao MFA exclusion list
+    url: https://apply.joinsherpa.com/visa/laos/nepalese-citizens
+    evidence: >
+      The Lao MFA's VOA exclusion list (notice No. 1232 — Afghanistan, Algeria, Bangladesh,
+      Pakistan, Nigeria and ~25 others who must apply at embassies) does NOT include Nepal.
+      Current Nepal-specific sources (Sherpa airline-grade data; VisitWorld 2026) confirm
+      Nepali citizens can use both VOA at listed checkpoints and the USD 50 tourist eVisa.
+    secondary_url: https://visitworld.today/laos/nepal-citizenship/travel
+  source:
+    name: Lao eVisa (official)
+    url: https://laoevisa.gov.la/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Sri Lanka
+  iso: LK
+  region: Asia
+  status: visa_on_arrival
+  duration: 30 days (double entry)
+  fee: "ETA fee — SAARC nationals get reduced rate (approx. USD 20); confirm current fee"
+  conditions:
+    - Apply for the ETA online before travel (technically eTA + visa issued on arrival)
+    - Passport valid ≥ 6 months, onward ticket, funds
+  extension: Extendable in-country
+  source:
+    name: Sri Lanka eVisa / ETA (Department of Immigration & Emigration)
+    url: https://www.srilankaevisa.lk/
+  confidence: high
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Timor-Leste
+  iso: TL
+  region: Asia
+  status: visa_on_arrival
+  duration: 30 days (extendable once in-country)
+  fee: "USD 30"
+  conditions:
+    - Available at Dili airport/seaport for ALL non-exempt nationalities, and at the
+      Batugade land border crossing from Indonesian West Timor
+  proof:
+    nepal_explicitly_named: false  # universal policy covers Nepal
+    url: https://en.wikipedia.org/wiki/Visa_policy_of_Timor-Leste
+    evidence: >
+      Timor-Leste's policy grants USD 30 / 30-day visas on arrival to all non-exempt
+      visitors at Dili air/sea ports and Batugade land border — covers Nepali passports.
+  source:
+    name: Timor-Leste Migration Service
+    url: https://migracao.gov.tl/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Bangladesh
+  iso: BD
+  region: Asia
+  status: visa_on_arrival
+  duration: Up to 30 days
+  fee: Gratis (reciprocity arrangement with Nepal)
+  conditions:
+    - Tourism/business; onward ticket, funds, hotel proof
+    - Airlines sometimes still ask for a pre-arranged visa — confirm with your carrier (Timatic)
+  proof:
+    nepal_explicitly_named: true
+    url: https://ceslam.org/news-media/bangladesh-nod-to-visa-on-arrival-for-nepalis/
+    evidence: >
+      Bangladesh grants Nepali nationals a gratis visa on arrival for up to 30 days under a
+      documented reciprocity arrangement (mirroring Nepal's free SAARC VOA). Wikipedia's
+      Nepal-specific table (2026) lists Bangladesh as "Visa on arrival — 1 month" and
+      Passport Index (Aug 2026) agrees.
+  source:
+    name: Bangladesh Department of Immigration & Passports
+    url: https://www.dip.gov.bd/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Rwanda
+  iso: RW
+  region: Africa
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "USD 50 (single entry); East Africa Tourist Visa USD 100"
+  conditions:
+    - Rwanda grants VOA to citizens of ALL countries
+  source:
+    name: Rwanda Directorate General of Immigration (Irembo)
+    url: https://irembo.gov.rw/
+  confidence: high
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Tanzania
+  iso: TZ
+  region: Africa
+  status: visa_on_arrival
+  duration: 90 days
+  fee: "USD 50 (single entry)"
+  conditions:
+    - eVisa strongly recommended instead (VOA queues are long)
+  source:
+    name: Tanzania Immigration eVisa
+    url: https://visa.immigration.go.tz/
+  confidence: high
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Madagascar
+  iso: MG
+  region: Africa
+  status: visa_on_arrival
+  duration: 15–60 days
+  fee: "EUR 10–35 depending on duration"
+  conditions:
+    - eVisa alternative available
+  source:
+    name: Madagascar eVisa
+    url: https://evisamada-mg.com/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Mozambique
+  iso: MZ
+  region: Africa
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "Approx. USD 10 border fee for tourists (post-2023 relaxation); confirm current rules"
+  conditions:
+    - eVisa alternative at evisa.gov.mz
+  source:
+    name: Mozambique eVisa
+    url: https://evisa.gov.mz/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Burundi
+  iso: BI
+  region: Africa
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "USD 90 approx. (online e-visa also available via migration.gov.bi)"
+  conditions:
+    - Bujumbura airport arrival
+  proof:
+    nepal_explicitly_named: true
+    url: https://en.wikipedia.org/wiki/Visa_requirements_for_Nepalese_citizens
+    evidence: >
+      Wikipedia's Nepal-specific table (2026) lists Burundi as "Online Visa / Visa on
+      arrival — 1 month" for Nepali passports; Passport Index (Aug 2026) agrees.
+  source:
+    name: Burundi Migration Department
+    url: https://migration.gov.bi/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Comoros
+  iso: KM
+  region: Africa
+  status: visa_on_arrival
+  duration: 45 days
+  fee: "EUR 30"
+  conditions:
+    - VOA issued to nationals of ANY country; passport valid 6 months + return/onward ticket
+  proof:
+    nepal_explicitly_named: false  # universal policy covers Nepal
+    url: https://en.wikipedia.org/wiki/Visa_policy_of_the_Comoros
+    evidence: >
+      Comoros policy (Timatic-cited): nationals of any country obtain a visa on arrival for
+      up to 45 days at EUR 30 — a universal rule that covers Nepali passports.
+  source:
+    name: Union of the Comoros (IATA Timatic via airline)
+    url: https://www.iatatravelcentre.com/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Guinea-Bissau
+  iso: GW
+  region: Africa
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "Approx. XOF 55,000 / USD 90"
+  conditions:
+    - Also available as eVisa (RGB portal)
+  source:
+    name: Guinea-Bissau eVisa
+    url: https://www.rgb-visa.com/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Mauritania
+  iso: MR
+  region: Africa
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "EUR 55 approx."
+  conditions:
+    - Nouakchott and Nouadhibou airports; eVisa portal also live
+  source:
+    name: Mauritania ANRPTS
+    url: https://anrpts.gov.mr/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Seychelles
+  iso: SC
+  region: Africa
+  status: visa_on_arrival
+  duration: Visitor's permit up to 30 days (visa-free regime, permit issued on entry)
+  fee: "Free, but mandatory digital Travel Authorization (~EUR 10) before boarding"
+  conditions:
+    - Apply for Electronic Border System travel authorization with accommodation proof
+    - Return ticket + funds
+  source:
+    name: Seychelles Electronic Border System (official)
+    url: https://seychelles.govtas.com/
+  confidence: high
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Samoa
+  iso: WS
+  region: Oceania
+  status: visa_on_arrival
+  duration: 90 days (gratis Visitor's Permit on entry — corrected from 60)
+  fee: Free
+  conditions:
+    - Passport valid 6 months, return/onward ticket, bank statement, confirmed accommodation
+  proof:
+    nepal_explicitly_named: false  # universal policy covers Nepal
+    url: https://en.wikipedia.org/wiki/Visa_policy_of_Samoa
+    evidence: >
+      Samoa issues a gratis 90-day Visitor's Permit on arrival to all visitors (except US
+      citizens resident in American Samoa) — a universal policy covering Nepali passports.
+  source:
+    name: Samoa Immigration
+    url: https://www.samoaimmigration.gov.ws/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Tuvalu
+  iso: TV
+  region: Oceania
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "~AUD 100 (Nepal is NOT on the ~46-country FREE-VOA list, so the paid VOA applies)"
+  conditions:
+    - Issued at Funafuti International Airport; passport valid 6 months, funds, onward ticket
+  proof:
+    nepal_explicitly_named: false  # universal paid-VOA rule covers non-exempt nationals
+    url: https://en.wikipedia.org/wiki/Visa_policy_of_Tuvalu
+    evidence: >
+      Tuvalu's policy: visitors obtain a visa on arrival unless visa-exempt; a designated
+      list (~46 mostly Commonwealth/Pacific jurisdictions, NOT including Nepal) gets it
+      free, while other nationals pay (~AUD 100). Nepali passports fall in the paid tier.
+  source:
+    name: Government of Tuvalu (IATA Timatic via airline)
+    url: https://www.iatatravelcentre.com/
+  confidence: high
+  verified: 2026-08-09
+  verify_before_travel: true
+
+- country: Palau
+  iso: PW
+  region: Oceania
+  status: visa_on_arrival
+  duration: 30 days
+  fee: "USD 50 approx. + departure/green fees"
+  conditions:
+    - Passport valid ≥ 6 months, onward/return ticket
+    - Departure tax and Pristine Paradise environmental fee are collected separately
+  source:
+    name: Palau Bureau of Immigration
+    url: https://www.palaugov.pw/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Bolivia
+  iso: BO
+  region: Americas
+  status: online_visa_required  # CORRECTED — do not rely on VOA
+  duration: 30 days (extendable in-country)
+  fee: "USD 30 approx."
+  conditions:
+    - "CORRECTION (2026-08-09): Wikipedia's Nepal-specific table lists Bolivia as 'Online
+      Visa — 30 days' for Nepali passports, NOT visa on arrival. Apply on the Cancillería
+      portal before travel"
+    - Hotel booking, onward ticket, yellow fever certificate for lowland regions
+  proof:
+    nepal_explicitly_named: true
+    url: https://en.wikipedia.org/wiki/Visa_requirements_for_Nepalese_citizens
+    evidence: >
+      Nepal-specific 2026 table shows Bolivia as an online visa (30 days) for Nepali
+      passports; Passport Index's VOA label is not corroborated — apply online first.
+  source:
+    name: Bolivia Online Visa (Cancillería)
+    url: https://visas.cancilleria.gob.bo/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Mauritius
+  iso: MU
+  region: Africa
+  status: visa_on_arrival
+  duration: 60 days
+  fee: Free
+  conditions:
+    - Confirmed accommodation, return ticket, and sufficient funds (~USD 100/day guideline)
+    - Complete the Mauritius All-in-One digital arrival form before travel
+  proof:
+    nepal_explicitly_named: false
+    url: https://passport.govmu.org/
+    evidence: >
+      Passport Index (Aug 2026) and Timatic-derived aggregators list Nepal in Mauritius's
+      60-day visa-on-arrival category. Not yet confirmed on a Mauritian government page
+      naming Nepal — verify via airline/Timatic before booking.
+  source:
+    name: Passport and Immigration Office, Mauritius
+    url: https://passport.govmu.org/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Senegal
+  iso: SN
+  region: Africa
+  status: visa_on_arrival
+  duration: Up to 30 days (entry stamp/VOA)
+  fee: Free or nominal
+  conditions:
+    - Senegal abolished tourist visas for most nationalities in 2015; onward ticket + funds
+  proof:
+    nepal_explicitly_named: false
+    url: https://www.iatatravelcentre.com/
+    evidence: >
+      Passport Index (Aug 2026) lists 30-day arrival access for Nepal, consistent with
+      Senegal's broadly open post-2015 regime. No official Senegalese page naming Nepal
+      located — confirm via airline/Timatic.
+  source:
+    name: Senegal (IATA Timatic via airline)
+    url: https://www.iatatravelcentre.com/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true
+
+- country: Trinidad and Tobago
+  iso: TT
+  region: Americas
+  status: visa_on_arrival
+  duration: Per entry certificate/waiver granted
+  conditions:
+    - Passport Index (Aug 2026) reports arrival access for Nepal; T&T also runs an eVisa
+      portal — safest is to apply there or confirm the waiver with the nearest T&T mission
+  source:
+    name: Trinidad and Tobago eVisa (official)
+    url: https://evisa.ttservices.online/
+  confidence: medium
+  checked: 2026-08-09
+  verify_before_travel: true

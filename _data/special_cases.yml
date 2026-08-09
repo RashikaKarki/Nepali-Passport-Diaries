@@ -1,0 +1,206 @@
+# special_cases.yml — Extra access a Nepali passport gets when paired with another country's visa
+
+- country: Mexico
+  iso: MX
+  region: Americas
+  status: special
+  requires: A valid visa (any category) from the US, Canada, Japan, the UK, or a Schengen state — or permanent residence of those countries or a Pacific Alliance state
+  benefit: Enter Mexico without a Mexican visa for tourism, transit, or business
+  held_visas: [US, Canada, Japan, UK, Schengen]
+  duration: Up to 180 days (officer's discretion)
+  conditions:
+    - Supporting visa must be valid (unexpired) and affixed in the passport on the date of entry
+    - Some Mexican consulates specify MULTIPLE-ENTRY visas, and airlines may require the visa
+      to have been used at least once to enter the issuing country — safest with a used
+      multiple-entry US/UK/Schengen/Canada/Japan visa
+    - Expired US visa + EAD card / I-797 / I-20 / DS-2019 / Advance Parole does NOT qualify
+    - Complete the FMM/entry registration as directed
+  proof:
+    nepal_explicitly_named: false  # rule is explicitly nationality-agnostic
+    url: https://consulmex.sre.gob.mx/toronto/index.php/en/servicesforeigners/doclegalization/52-conservices/225-visitors-who-do-not-require-a-visa-with-a-stay-up-to-180-days
+    evidence: >
+      Official Mexican consulate (SRE, gob.mx domain) states that ALL foreign visitors,
+      regardless of nationality, travelling for tourism, business or transit are exempt from
+      a Mexican visa if they hold a valid visa issued by Canada, Japan, the USA, the UK or
+      a Schengen country — "regardless of nationality" covers Nepali passports.
+  source:
+    name: Consulate of Mexico (SRE) — visitors who do not require a visa
+    url: https://consulmex.sre.gob.mx/toronto/index.php/en/servicesforeigners/doclegalization/52-conservices/225-visitors-who-do-not-require-a-visa-with-a-stay-up-to-180-days
+  confidence: high
+  verified: 2026-08-09
+
+- country: Georgia
+  iso: GE
+  region: Asia
+  status: special
+  requires: A valid visa OR residence permit from the US, UK, Japan, Canada, Australia, New Zealand, Israel, South Korea, a Schengen state, or a GCC state
+  benefit: Visa-free entry with a valid visa or residence permit from any listed country
+  held_visas: [US, UK, Japan, Canada, Australia, New Zealand, Israel, South Korea, Schengen, GCC]
+  duration: 90 days
+  conditions:
+    - Supporting visa/permit must be valid at entry; carry the physical document
+  proof:
+    nepal_explicitly_named: false  # rule applies to all visa-required nationals, incl. Nepal
+    url: https://www.geoconsul.gov.ge/en/entering-georgia/
+    evidence: >
+      Consular Dept of the Georgian MFA (official) publishes the rule that holders of valid
+      visas or residence permits of the listed countries may enter and stay 90 days in any
+      180-day period without a Georgian visa; Georgia's national tourism portal
+      (georgia.travel) separately names Nepal among visa-required nationalities, confirming
+      this shortcut is what applies to ordinary Nepali passports.
+    caveat: Travellers relying on GCC residence permits have reported occasional refusals;
+      a US/UK/Schengen/Japan/Canada/Australia/NZ/Israel/Korea visa or permit is safer.
+  source:
+    name: Consular Department, MFA of Georgia
+    url: https://www.geoconsul.gov.ge/en/entering-georgia/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Albania
+  iso: AL
+  region: Europe
+  status: special
+  requires: A multiple-entry Schengen, UK, or US visa, previously used at least once
+  benefit: Visa-free entry
+  held_visas: [Schengen, UK, US]
+  duration: Up to 90 days
+  conditions:
+    - Visa must be multiple-entry AND already used once
+    - Residence permits of Schengen/UK/US (and 10-year UAE residence) also qualify
+    - Otherwise Nepali citizens can apply for the Albanian eVisa (https://e-visa.al)
+  source:
+    name: Ministry for Europe and Foreign Affairs of Albania
+    url: https://punetejashtme.gov.al/en/regjimi-i-vizave-per-te-huajt/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Montenegro
+  iso: ME
+  region: Europe
+  status: special
+  requires: A valid visa from the US, UK, a Schengen state, Australia, Japan, Canada, New Zealand, or Ireland
+  benefit: Visa-free entry with a valid visa from any listed country
+  held_visas: [US, UK, Schengen, Australia, Japan, Canada, New Zealand, Ireland]
+  duration: Up to 30 days
+  conditions:
+    - UAE residence permit holders may enter for up to 10 days
+  source:
+    name: Government of Montenegro — Decree on visa regime
+    url: https://www.gov.me/en/documents/6a307959-1d00-467e-a2fd-0e808d17ff47
+  confidence: high
+  verified: 2026-08-09
+
+- country: Moldova
+  iso: MD
+  region: Europe
+  status: special
+  requires: A valid visa OR residence permit from an EU/Schengen state, Canada, Ireland, the UK, or the US
+  benefit: Visa-free entry
+  held_visas: [Schengen, Canada, Ireland, UK, US]
+  duration: 90 days in any 180
+  conditions:
+    - Supporting visa/permit must be valid at entry; carry the physical document
+  source:
+    name: MFA of Moldova — Visa regime for foreigners
+    url: https://mfa.gov.md/en/content/visa-regime-foreigners
+  confidence: high
+  verified: 2026-08-09
+
+- country: Morocco
+  iso: MA
+  region: Africa
+  status: special
+  requires: A valid visa from a Schengen state, the US, UK, Australia, Canada, Ireland, or New Zealand — or residence of Cyprus, Japan, or the UAE
+  benefit: Eligible for fast electronic visa (eVisa, ~24–72h) instead of embassy application
+  held_visas: [Schengen, US, UK, Australia, Canada, Ireland, New Zealand]
+  duration: 30 days
+  conditions:
+    - Apply on the official Accès Maroc portal; the supporting visa/permit must be valid
+  source:
+    name: Accès Maroc (official eVisa platform)
+    url: https://www.acces-maroc.ma/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Türkiye
+  iso: TR
+  region: Europe
+  status: special
+  requires: A valid Schengen, US, UK, or Ireland visa or residence permit (eVisas of those countries don't count)
+  benefit: Eligible for conditional single-entry eVisa instead of embassy visa
+  held_visas: [Schengen, US, UK, Ireland]
+  duration: 30 days
+  conditions:
+    - Supporting visa must be valid on the Türkiye entry date (eVisas of those countries don't count)
+    - Must arrive on an approved airline; check Nepal's eligibility on the portal before paying
+  source:
+    name: Republic of Türkiye Official eVisa
+    url: https://www.evisa.gov.tr/en/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Argentina
+  iso: AR
+  region: Americas
+  status: special
+  requires: A valid US B2, B1, J, O, P, E, or H-1B visa in your current passport
+  benefit: Apply online for the AVE (electronic travel authorization) instead of a consular visa
+  held_visas: [US]
+  duration: 90 days
+  conditions:
+    - Tourism only; US visa must be valid and in the current passport
+  source:
+    name: Dirección Nacional de Migraciones — AVE
+    url: https://www.migraciones.gov.ar/ave/index.htm
+  confidence: high
+  verified: 2026-08-09
+
+- country: Panama
+  iso: PA
+  region: Americas
+  status: special
+  requires: A multiple-entry US, UK, Canada, Australia, or EU/Schengen visa, used at least once and valid ≥ 6 months
+  benefit: Enter without a Panamanian visa
+  held_visas: [US, UK, Canada, Australia, Schengen]
+  duration: Up to 30 days (extendable)
+  conditions:
+    - Supporting visa valid ≥ 6 months at entry and previously used to enter the issuing country
+    - Proof of USD 500 + onward ticket
+  source:
+    name: Servicio Nacional de Migración de Panamá
+    url: https://www.migracion.gob.pa/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Antigua and Barbuda
+  iso: AG
+  region: Caribbean
+  status: special
+  requires: A valid US, UK, Canada, or Schengen visa or residency
+  benefit: Eligible for entry via eVisa / visa on arrival channel
+  held_visas: [US, UK, Canada, Schengen]
+  duration: Typically 30 days
+  conditions:
+    - Confirm the current eVisa/VOA procedure on the Department of Immigration page before flying
+  source:
+    name: Antigua and Barbuda Department of Immigration
+    url: https://immigration.gov.ag/visa-services/visa-on-arrival/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Bahrain
+  iso: BH
+  region: Middle East
+  status: special
+  requires: A valid UAE, UK, US, Schengen, or Saudi visa (Hajj/Umrah visas excluded) — or a US green card
+  benefit: Unlocks Bahrain's 14-day eVisa / visa on arrival for Nepali passports
+  held_visas: [UAE, UK, US, Schengen, Saudi Arabia]
+  duration: 14 days
+  conditions:
+    - Without one of these supporting documents, Nepali applicants need a Bahrain-based
+      sponsor route instead (see evisa.yml Bahrain entry)
+  source:
+    name: Bahrain eVisa eligibility (NPRA, official)
+    url: https://evisa.gov.bh/list-of-online-visa-country.html
+  confidence: high
+  verified: 2026-08-09

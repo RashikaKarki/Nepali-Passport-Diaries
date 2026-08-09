@@ -1,0 +1,8 @@
+.superpowers/
+_site/
+.jekyll-cache/
+docs/
+vendor/
+.bundle/
+__pycache__/
+.env

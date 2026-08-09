@@ -1,0 +1,88 @@
+# Domains accepted as official sources. Subdomains of a listed domain are accepted.
+# Add a domain in the same PR that cites it; reviewers check it belongs to a government.
+
+# Asia
+- immigration.go.th
+- thaievisa.go.th
+- imigrasi.go.id
+- imi.gov.my
+- evisa.gov.vn
+- evisa.gov.kh
+- laoevisa.gov.la
+- srilankaevisa.lk
+- immigration.gov.mv
+- migracao.gov.tl
+- dip.gov.bd
+- mea.gov.in
+- ica.gov.sg
+- dfa.gov.ph
+- evisa.gov.az
+- e-visa.gov.uz
+- e-gov.kg
+- evisa.tj
+- evisa.mn
+- moip.gov.mm
+- immi.gov.bt
+- nadra.gov.pk
+- immd.gov.hk
+- geoconsul.gov.ge
+
+# Middle East
+- evisa.gov.bh
+- hayya.qa
+- rop.gov.om
+- evisa.gov.tr
+
+# Africa
+- etakenya.go.ke
+- evisa.gov.et
+- immigration.go.ug
+- immigration.go.tz
+- irembo.gov.rw
+- zambiaimmigration.gov.zm
+- evisa.gov.zw
+- evisa.gov.mw
+- gouv.dj
+- gouv.tg
+- gouv.bj
+- evisa.gov.mz
+- migration.gov.bi
+- anrpts.gov.mr
+- gid.gov.gm
+- govmu.org
+- acces-maroc.ma
+# Outsourced-but-official eVisa operators (verify against the country's MFA page before trusting)
+- evisamada-mg.com
+- rgb-visa.com
+- govtas.com
+
+# Europe
+- welcometoserbia.gov.rs
+- evisa.gov.md
+- mfa.gov.md
+- punetejashtme.gov.al
+- gov.me
+
+# Americas & Caribbean
+- gob.mx
+- migraciones.gov.ar
+- cancilleria.gob.bo
+- migracion.gob.pa
+- immigration.gov.ag
+- dominica.gov.dm
+- foreign.gov.bb
+- evisa.ttservices.online
+
+# Oceania
+- gov.fm
+- immigration.gov.ck
+- gov.nu
+- samoaimmigration.gov.ws
+- palaugov.pw
+- ica.gov.pg
+- evisa.gov.vu
+
+# Airline-grade fallback (see DATA_POLICY.md §1): allowed as `source` ONLY when the
+# destination government publishes no usable web source of its own.
+- iatatravelcentre.com
+- passportindex.org

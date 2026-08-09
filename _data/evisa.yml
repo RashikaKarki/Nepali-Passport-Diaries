@@ -1,0 +1,489 @@
+- country: Malaysia
+  iso: MY
+  region: Asia
+  status: evisa
+  duration: 30 days (single entry)
+  conditions:
+    - Apply online before travel; print the eVisa
+    - Passport valid ≥ 6 months, return ticket, proof of funds/accommodation
+    - Complete Malaysia Digital Arrival Card (MDAC) within 3 days before arrival
+  source:
+    name: Official Malaysia eVisa Portal (Immigration Department)
+    url: https://malaysiavisa.imi.gov.my/evisa/
+  proof:
+    nepal_explicitly_named: true
+    url: https://www.kln.gov.my/web/npl_kathmandu/requirement_foreigner
+    evidence: >
+      Embassy of Malaysia, Kathmandu (official kln.gov.my page) publishes the eVisa
+      requirements and the fee specifically "for Nepali Passport" — visa fee RM 20 plus
+      RM 105 processing — and directs applications to malaysiavisa.imi.gov.my. Malaysia's
+      Immigration Dept visa-requirement-by-country page also lists Nepal as visa-required.
+  fee: "RM 20 visa + RM 105 processing (per Embassy of Malaysia Kathmandu)"
+  confidence: high
+  verified: 2026-08-09
+
+- country: Thailand
+  iso: TH
+  region: Asia
+  status: evisa
+  duration: 60 days (Tourist Visa TR, single entry)
+  fee: "Approx. USD 40 / NPR 5,000 single entry"
+  conditions:
+    - All applications via the official Thai eVisa platform since 1 Jan 2025
+    - Processing ≥ 7 working days — apply 3–4 weeks ahead
+    - Mandatory Thailand Digital Arrival Card (TDAC) within 72 hours before arrival
+  notes: >
+    Nepal historically appeared on Thailand's 15-day visa-on-arrival list (THB 2,000 cash),
+    but as of mid-2026 sources conflict — Thailand tightened visa rules in May 2026 and
+    Nepal-based agencies report Nepal is NOT currently on the VOA list. Do not fly on the
+    assumption of VOA; get the eVisa.
+  source:
+    name: Royal Thai Government eVisa (official)
+    url: https://www.thaievisa.go.th/
+  proof:
+    nepal_explicitly_named: true
+    url: https://kathmandu.thaiembassy.org/en/page/general-information?menu=6115eec487437e2f2256abe2
+    evidence: >
+      Royal Thai Embassy Kathmandu (official) states that from 1 Jan 2025 all Nepali and
+      foreign nationals in Nepal must apply via thaievisa.go.th, with the fee deposited via
+      Global IME Bank Manager's Cheque, and that only Nepali OFFICIAL (not ordinary)
+      passport holders are visa-exempt — confirming ordinary Nepali passports need a visa.
+  confidence: high
+  verified: 2026-08-09
+
+- country: Vietnam
+  iso: VN
+  region: Asia
+  status: evisa
+  duration: Up to 90 days (single or multiple entry)
+  fee: "USD 25 single / USD 50 multiple"
+  conditions:
+    - eVisa open to all nationalities since Aug 2023
+    - Enter only via the port listed on your eVisa
+  source:
+    name: Vietnam Immigration eVisa (official)
+    url: https://evisa.gov.vn/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Indonesia
+  iso: ID
+  region: Asia
+  status: evisa
+  duration: Typically 30–60 days depending on visa type (e.g., C1 tourism)
+  fee: "Varies by visa type (IDR-denominated; check portal)"
+  conditions:
+    - "IMPORTANT: Nepal is NOT on Indonesia's visa-free or e-VOA lists — a pre-approved eVisa is required"
+    - Passport valid ≥ 6 months, return/onward ticket, proof of funds
+  source:
+    name: Directorate General of Immigration — official eVisa portal
+    url: https://evisa.imigrasi.go.id/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Sri Lanka
+  iso: LK
+  region: Asia
+  status: evisa
+  duration: 30 days double entry (extendable)
+  fee: "SAARC reduced rate (~USD 20); confirm on portal"
+  conditions:
+    - Apply online before travel; passport valid ≥ 6 months, onward ticket, funds
+  source:
+    name: Sri Lanka eVisa (Dept. of Immigration & Emigration)
+    url: https://www.srilankaevisa.lk/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Kenya
+  iso: KE
+  region: Africa
+  status: evisa
+  duration: Up to 90 days (eTA — Electronic Travel Authorisation)
+  fee: "USD 32.50"
+  conditions:
+    - Apply up to 90 days ahead, minimum 3 days before travel
+    - Hotel proof or invitation letter; yellow fever certificate if from endemic country
+  source:
+    name: Kenya eTA (official)
+    url: https://www.etakenya.go.ke/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Cambodia
+  iso: KH
+  region: Asia
+  status: evisa
+  duration: 30 days
+  fee: "USD 30 + USD 6 processing"
+  conditions:
+    - Apply online before travel; print the eVisa approval
+    - Mandatory Cambodia e-Arrival Card (arrival.gov.kh) before arrival
+  source:
+    name: Cambodia eVisa (official)
+    url: https://www.evisa.gov.kh/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Azerbaijan
+  iso: AZ
+  region: Asia
+  status: evisa
+  duration: 30 days
+  fee: "USD 25 (ASAN Visa, 3 working days)"
+  conditions:
+    - Apply online before travel; carry the printed eVisa
+  source:
+    name: Azerbaijan ASAN eVisa (official)
+    url: https://evisa.gov.az/
+  confidence: high
+  checked: 2026-08-09
+
+- country: Uzbekistan
+  iso: UZ
+  region: Asia
+  status: evisa
+  duration: 30 days
+  fee: "USD 20 single entry"
+  conditions:
+    - Apply online before travel; carry the printed eVisa
+  source:
+    name: Uzbekistan eVisa (official)
+    url: https://e-visa.gov.uz/
+  confidence: high
+  checked: 2026-08-09
+
+- country: Kyrgyzstan
+  iso: KG
+  region: Asia
+  status: evisa
+  duration: 30–90 days depending on type
+  conditions:
+    - Apply online before travel; carry the printed eVisa
+  source:
+    name: Kyrgyzstan eVisa (official)
+    url: https://evisa.e-gov.kg/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Tajikistan
+  iso: TJ
+  region: Asia
+  status: evisa
+  duration: 60 days
+  fee: "USD 30 (+USD 20 GBAO/Pamir permit)"
+  conditions:
+    - Apply online before travel; add the GBAO permit if visiting the Pamirs
+  source:
+    name: Tajikistan eVisa (official)
+    url: https://www.evisa.tj/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Mongolia
+  iso: MN
+  region: Asia
+  status: evisa
+  duration: 30 days
+  conditions:
+    - Apply online before travel; carry the printed eVisa
+  source:
+    name: Mongolia eVisa (official)
+    url: https://evisa.mn/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Myanmar
+  iso: MM
+  region: Asia
+  status: evisa
+  duration: 28 days (tourist) / 70 days (business)
+  fee: "USD 50 tourist"
+  conditions:
+    - Entry only via Yangon/Nay Pyi Taw/Mandalay airports or listed land crossings
+  notes: Check security situation; large parts of the country are unsafe.
+  source:
+    name: Myanmar eVisa (official)
+    url: https://evisa.moip.gov.mm/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Bhutan
+  iso: BT
+  region: Asia
+  status: evisa
+  duration: As per approved itinerary
+  fee: "USD 40 visa + Sustainable Development Fee USD 100/night (rate valid to Aug 2027)"
+  conditions:
+    - Apply online (or via a licensed tour operator) before travel
+    - Sustainable Development Fee is payable for each night of stay
+  source:
+    name: Bhutan Immigration Services Portal (official)
+    url: https://immi.gov.bt/
+  confidence: high
+  checked: 2026-08-09
+
+- country: Pakistan
+  iso: PK
+  region: Asia
+  status: evisa
+  duration: 90 days (tourist/business)
+  fee: "FREE — eVisa fees abolished for 126 countries incl. Nepal since 14 Aug 2024"
+  conditions:
+    - Apply online before travel (typically decided within ~24 hours)
+    - "NOT visa-free despite some index labels: an approved eVisa is still required before boarding"
+  proof:
+    nepal_explicitly_named: true
+    url: https://myrepublica.nagariknetwork.com/news/citizens-of-nepal-among-126-countries-entitled-to-free-visa-to-travel-to-pakistan
+    evidence: >
+      Nepali press (Republica) reports Pakistan's Aug 2024 policy naming Nepal among 126
+      countries whose nationals get free 90-day eVisas for tourism/business, issued within
+      24 hours via the streamlined online system. Passport Index's "visa-free" label for
+      Pakistan reflects the zero fee, not exemption from applying.
+  source:
+    name: Pakistan Online Visa System (NADRA, official)
+    url: https://visa.nadra.gov.pk/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Bahrain
+  iso: BH
+  region: Middle East
+  status: evisa_conditional
+  duration: 14 days (eVisa / VOA)
+  conditions:
+    - "CONDITIONAL for Nepali passports: airline-grade (Timatic/Sherpa) data says the
+      eVisa/VOA requires a valid visa of the UAE, UK, US, a Schengen state, or Saudi
+      Arabia (excl. Hajj/Umrah), or a US green card"
+    - Without a supporting visa, apply via a Bahrain-based sponsor / NPRA channels
+    - Confirm your eligibility on the official country-eligibility checker before paying
+  proof:
+    nepal_explicitly_named: true
+    url: https://en.wikipedia.org/wiki/Visa_requirements_for_Nepalese_citizens
+    evidence: >
+      Wikipedia's Nepal-specific table (2026) lists Bahrain as "eVisa / Visa on arrival —
+      14 days"; airline-grade Sherpa data for Nepali citizens adds the supporting-visa
+      condition (valid UAE/UK/US/Schengen/Saudi visa or US green card). Official
+      eligibility list: https://evisa.gov.bh/list-of-online-visa-country.html
+  source:
+    name: Bahrain eVisa (NPRA, official)
+    url: https://www.evisa.gov.bh/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Qatar
+  iso: QA
+  region: Middle East
+  status: evisa
+  duration: 30 days (Hayya A1 tourist visa, extendable once)
+  fee: "QAR 100"
+  conditions:
+    - Apply via the Hayya platform (A1 "Tourist – Own Itinerary"); confirmed hotel booking,
+      return ticket and funds required
+    - Nepal is NOT on Qatar's visa-free/VOA list — never fly without the approved Hayya visa
+    - Nepalis legally resident in a GCC state can use the easier Hayya A2 (GCC Resident) route
+    - A tourist visa is NOT a work visa — employment requires employer-sponsored channels
+  proof:
+    nepal_explicitly_named: true
+    url: https://e-visaqatar.com/blog/qatar-visa-for-nepalese-citizens
+    evidence: >
+      Current (June 2026) Nepal-specific guidance confirms: Nepali passports are
+      visa-required for Qatar; the tourist route is the Hayya A1 eVisa at QAR 100 with
+      hotel booking; the A2 route exists only for Nepalis resident in GCC states.
+  source:
+    name: Hayya Platform (official)
+    url: https://hayya.qa/
+  confidence: high
+  verified: 2026-08-09
+
+- country: Ethiopia
+  iso: ET
+  region: Africa
+  status: evisa
+  duration: 30–90 days
+  fee: "USD 52 (30 days)"
+  conditions:
+    - eVisa valid only for arrival via Addis Ababa Bole International Airport
+  source:
+    name: Ethiopia eVisa (official)
+    url: https://www.evisa.gov.et/
+  confidence: high
+  checked: 2026-08-09
+
+- country: Uganda
+  iso: UG
+  region: Africa
+  status: evisa
+  duration: 90 days
+  fee: "USD 50"
+  conditions:
+    - Yellow fever certificate mandatory
+  source:
+    name: Uganda Electronic Visa (official)
+    url: https://visas.immigration.go.ug/
+  confidence: high
+  checked: 2026-08-09
+
+- country: Zambia
+  iso: ZM
+  region: Africa
+  status: evisa
+  duration: 30–90 days
+  fee: "USD 25 single / USD 50 KAZA UniVisa (Zambia+Zimbabwe)"
+  conditions:
+    - Apply online before travel; the KAZA UniVisa also covers Zimbabwe and Kazungula day trips
+  source:
+    name: Zambia Immigration eServices (official)
+    url: https://eservices.zambiaimmigration.gov.zm/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Zimbabwe
+  iso: ZW
+  region: Africa
+  status: evisa
+  duration: 30 days
+  fee: "USD 30 single"
+  conditions:
+    - Apply online before travel; carry the printed eVisa approval
+  source:
+    name: Zimbabwe eVisa (official)
+    url: https://www.evisa.gov.zw/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Malawi
+  iso: MW
+  region: Africa
+  status: evisa
+  duration: 30 days
+  fee: "USD 50"
+  conditions:
+    - Apply online before travel; carry the printed eVisa approval
+  source:
+    name: Malawi eVisa (official)
+    url: https://evisa.gov.mw/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Djibouti
+  iso: DJ
+  region: Africa
+  status: evisa
+  duration: 14–90 days
+  fee: "USD 23 (short) / USD 90"
+  conditions:
+    - Apply online before travel; carry the printed eVisa approval
+  source:
+    name: Djibouti eVisa (official)
+    url: https://www.evisa.gouv.dj/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Togo
+  iso: TG
+  region: Africa
+  status: evisa
+  duration: 15–90 days
+  conditions:
+    - Apply online before travel; carry the printed eVisa approval
+  source:
+    name: Togo Voyage (official)
+    url: https://voyage.gouv.tg/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Benin
+  iso: BJ
+  region: Africa
+  status: evisa
+  duration: 30–90 days
+  fee: "EUR 50 approx."
+  conditions:
+    - Apply online before travel; carry the printed eVisa approval
+  source:
+    name: Benin eVisa (official)
+    url: https://evisa.gouv.bj/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Papua New Guinea
+  iso: PG
+  region: Oceania
+  status: evisa
+  duration: 30–60 days
+  conditions:
+    - Apply online before travel; carry the printed eVisa approval
+  source:
+    name: PNG ICA eVisa (official)
+    url: https://evisa.ica.gov.pg/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Vanuatu
+  iso: VU
+  region: Oceania
+  status: evisa
+  duration: 30 days
+  conditions:
+    - Apply online before travel; carry the printed eVisa approval
+  source:
+    name: Vanuatu eVisa (official)
+    url: https://evisa.gov.vu/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Serbia
+  iso: RS
+  region: Europe
+  status: evisa
+  duration: Typically up to 30 days (per visa issued)
+  conditions:
+    - Serbia launched an eVisa system; check Nepal's eligibility inside the portal
+  source:
+    name: Serbia eVisa (official)
+    url: https://evisa.welcometoserbia.gov.rs/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Moldova
+  iso: MD
+  region: Europe
+  status: evisa
+  duration: Up to 90 days
+  conditions:
+    - Skip the eVisa entirely if you hold a valid US/UK/Ireland/Canada/EU-Schengen visa or
+      residence permit — that grants visa-free entry (see special_cases.yml)
+  source:
+    name: Moldova eVisa (official)
+    url: https://evisa.gov.md/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Oman
+  iso: OM
+  region: Middle East
+  status: evisa
+  duration: 10 or 30 days (unsponsored tourist visa)
+  conditions:
+    - Nepali applicants usually need hotel booking, return ticket, funds; GCC residents
+      have an easier route — confirm eligibility inside the ROP portal before paying
+  source:
+    name: Royal Oman Police eVisa (official)
+    url: https://evisa.rop.gov.om/
+  confidence: medium
+  checked: 2026-08-09
+
+- country: Hong Kong
+  iso: HK
+  region: Asia
+  status: evisa
+  duration: Per entry permit issued (typically 14–30 days visit)
+  conditions:
+    - Nepali passport holders need an entry visa/permit; applications are now submitted
+      online via the Immigration Department's e-Visa system, usually with a local sponsor
+  source:
+    name: Hong Kong Immigration Department e-Services (official)
+    url: https://www.immd.gov.hk/eng/evisaonline.html
+  confidence: medium
+  checked: 2026-08-09

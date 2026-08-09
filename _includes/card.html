@@ -1,0 +1,50 @@
+{% assign e = include.entry %}
+{% assign stamp_warning = false %}
+{% case e.status %}
+{% when "freedom_of_movement" %}{% assign stamp_label = "Open border" %}
+{% when "visa_free_nominal" %}{% assign stamp_label = "Nominal" %}{% assign stamp_warning = true %}
+{% when "visa_required" %}{% assign stamp_label = "Visa required" %}{% assign stamp_warning = true %}
+{% when "online_visa_required" %}{% assign stamp_label = "Online visa" %}{% assign stamp_warning = true %}
+{% when "evisa_conditional" %}{% assign stamp_label = "Conditional" %}{% assign stamp_warning = true %}
+{% when "special_restricted" %}{% assign stamp_label = "No shortcut" %}{% assign stamp_warning = true %}
+{% else %}{% assign stamp_label = include.label %}
+{% endcase %}
+<details class="card" data-category="{{ include.category }}" data-region="{{ e.region }}"
+         data-visas="{{ e.held_visas | join: ',' }}"
+         data-search="{{ e.country | downcase }} {{ e.region | downcase }}">
+  <summary>
+    <span class="flag" data-iso="{{ e.iso }}"></span>
+    <span class="country">{{ e.country }}</span>
+    <span class="stamp stamp--{{ include.category }}{% if stamp_warning %} stamp--warning{% endif %}">{{ stamp_label }}</span>
+    <span class="summary-line">{{ e.duration }}{% if e.fee %} — {{ e.fee }}{% endif %}</span>
+  </summary>
+  <div class="card-detail">
+    {% if e.benefit %}
+    <p class="pairing">{% if e.requires %}<strong>Requires:</strong> {{ e.requires }}<br>{% endif %}<strong>Benefit:</strong> {{ e.benefit }}</p>
+    {% endif %}
+    <h4>Conditions</h4>
+    <ul>
+      {% for c in e.conditions %}<li>{{ c }}</li>{% endfor %}
+    </ul>
+    {% if e.extension %}<p><strong>Extension:</strong> {{ e.extension }}</p>{% endif %}
+    {% if e.legal_basis %}<p><strong>Legal basis:</strong> {{ e.legal_basis }}</p>{% endif %}
+    {% if e.notes %}<p>{{ e.notes }}</p>{% endif %}
+    {% if e.proof %}
+    <div class="evidence">
+      <h4>Nepal-specific evidence</h4>
+      <p>{{ e.proof.evidence }}</p>
+      {% if e.proof.caveat %}<p><strong>Caveat:</strong> {{ e.proof.caveat }}</p>{% endif %}
+      <p>
+        <span class="named{% if e.proof.nepal_explicitly_named %} named--yes{% endif %}">{% if e.proof.nepal_explicitly_named %}✓ Nepal explicitly named{% else %}Covered by a general rule{% endif %}</span>
+        · <a href="{{ e.proof.url }}" rel="noopener">Proof ↗</a>{% if e.proof.secondary_url %} · <a href="{{ e.proof.secondary_url }}" rel="noopener">More ↗</a>{% endif %}
+      </p>
+    </div>
+    {% endif %}
+    <p class="provenance">
+      {% if e.verified %}Verified {{ e.verified | date: "%Y-%m-%d" }}{% else %}Checked {{ e.checked | date: "%Y-%m-%d" }}{% endif %} ·
+      <a href="{{ e.source.url }}" rel="noopener">{{ e.source.name }} ↗</a>
+      <br>Rules change — check the official page above before booking.
+    </p>
+    <a class="suggest" href="{{ site.repo }}/issues/new?template=update-entry.yml&title=Update%3A%20{{ e.country | url_encode }}">Spotted an error? Suggest a change</a>
+  </div>
+</details>

@@ -1,0 +1,23 @@
+<nav class="controls">
+  <div class="tabs" role="tablist" aria-label="Visa category">
+    <button class="tab is-active" data-category="visa_free">Visa-free ({{ site.data.visa_free | size }})</button>
+    <button class="tab" data-category="visa_on_arrival">On arrival ({{ site.data.visa_on_arrival | size }})</button>
+    <button class="tab" data-category="evisa">eVisa ({{ site.data.evisa | size }})</button>
+    <button class="tab" data-category="special">With another visa ({{ site.data.special_cases | size }})</button>
+  </div>
+  <div class="refine">
+    <input class="search" id="search" type="search" placeholder="Search a country…" aria-label="Search a country">
+    <select class="region" id="region" aria-label="Filter by region">
+      <option value="">All regions</option>
+      {% assign all_entries = site.data.visa_free | concat: site.data.visa_on_arrival | concat: site.data.evisa | concat: site.data.special_cases %}
+      {% assign regions = all_entries | map: "region" | uniq | sort %}
+      {% for r in regions %}<option>{{ r }}</option>{% endfor %}
+    </select>
+  </div>
+  <div class="visa-filter" id="visa-filter" hidden>
+    <button class="chip is-active" data-visa="">Any held visa</button>
+    {% capture held %}{% for e in site.data.special_cases %}{% for v in e.held_visas %}{{ v }}::{% endfor %}{% endfor %}{% endcapture %}
+    {% assign held_options = held | split: "::" | uniq | sort %}
+    {% for v in held_options %}<button class="chip" data-visa="{{ v }}">{{ v }}</button>{% endfor %}
+  </div>
+</nav>
