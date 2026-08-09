@@ -1,0 +1,21 @@
+.github/workflows/pages.yml
+  s_35f8cbcb46aeea::t_e30e8e4af3dde3 1-41
+_config.yml
+  s_35f8cbcb46aeea::t_7aee2d96035ca6 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6068875099ce9cf824ffd73c2b9c807cd377cba7",
+  "prompts": {},
+  "sessions": {
+    "s_35f8cbcb46aeea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc16cfaa-9677-4aa1-828e-b495316089bb",
+        "model": "claude-fable-5"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
