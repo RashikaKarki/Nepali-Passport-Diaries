@@ -1,0 +1,19 @@
+README.md
+  s_cc41572e05fb5e::t_62fd9052635861 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0b01345e7f66b88d37cc1cc1c048691377af4c06",
+  "prompts": {},
+  "sessions": {
+    "s_cc41572e05fb5e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c5b23ffa-4827-4b6c-925a-f12f23b58270",
+        "model": "composer-2.5"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
