@@ -204,3 +204,44 @@
     url: https://evisa.gov.bh/list-of-online-visa-country.html
   confidence: high
   verified: 2026-08-09
+
+- country: Costa Rica
+  iso: CR
+  region: Americas
+  status: special
+  requires: A multiple-entry visa or residence (any category) from the US or Canada — or a multiple-entry Schengen Category C or D visa — or residence in the EU, UK, Switzerland, Norway, or Iceland
+  benefit: Enter without a Costa Rican consular visa for up to 30 days
+  held_visas: [US, Canada, Schengen]
+  duration: Up to 30 days, and never longer than the remaining validity of the supporting visa/residence
+  conditions:
+    - Nepal is a THIRD GROUP nationality (consular visa required) and this exemption is written for third- and fourth-group nationals
+    - Passport validity 180 days (6 months), counted from the intended date of entry
+    - Supporting visa must be affixed in the passport and valid on the date of entry
+    - US/Canada — any category permitting multiple entries qualifies (B1/B2, F1, H1-B, green card, PR, refugee/asylee status), minimum validity 1 calendar day from intended entry
+    - US crew visas qualify only as type D or C1/D — plain C1 does not
+    - Schengen — Category C or D, MULTIPLE-ENTRY only, and a visa taking effect after the intended Costa Rica entry date is not accepted
+    - Confirmed return or onward ticket
+    - Proof of funds — US$100 per month or partial month of stay
+    - Japan, South Korea, Australia, NZ, Israel, UAE, Saudi/GCC and UK visitor visas do NOT qualify (Japan and Korea were dropped from the exception list in the 2025 rewrite)
+    - UK and Ireland count via RESIDENCE only, not a visitor visa (Ireland is not in Schengen)
+  proof:
+    nepal_explicitly_named: true
+    url: https://migracion.go.cr/visas/
+    evidence: >
+      DGME's Directrices Generales de Visas de Ingreso y Permanencia para No Residentes, published
+      in Alcance N° 148 to La Gaceta N° 216 on 17 Nov 2025, lists Nepal in the Third Group (consular
+      visa, 180-day passport validity, 30 days extendable to 90) and separately sets out the
+      exceptions under which third- and fourth-group nationals may dispense with the consular visa.
+    caveat: >
+      Sources disagree on the Schengen minimum validity — DGME's own page states 1 calendar day,
+      while Fragomen's client alert reports 90 days remaining. Assume 90 days to be safe.
+      Airline check-in staff frequently do not know this rule, so carry a printed Spanish-language
+      copy of the DGME exceptions page. Extension rights are unclear — the group allows 30 days
+      extendable to 90, but the exempted stay is capped by supporting-visa validity.
+  source:
+    name: Dirección General de Migración y Extranjería (DGME) — Visas
+    url: https://migracion.go.cr/visas/
+    secondary: https://migracion.go.cr/wp-content/uploads/2025/11/Directrices-Generales-de-Visas-Noviembre-2025-Alcance-148-Gaceta-N%C2%B0-216-17-11-2025.pdf
+  confidence: high
+  verified: 2026-08-11
+  
