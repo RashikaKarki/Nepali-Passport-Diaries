@@ -40,6 +40,8 @@ function render() {
 tabs.forEach(tab =>
   tab.addEventListener("click", () => {
     state.category = tab.dataset.category;
+    state.visa = "";
+    setActive(chips, chips[0]);
     setActive(tabs, tab);
     render();
   })
