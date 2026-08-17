@@ -1,0 +1,19 @@
+assets/js/search.js
+  s_77bd51c5f7336e::t_b6bf020a9c0f56 43-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a4d8c526fe52a22596bafbe86488b812afb6167d",
+  "prompts": {},
+  "sessions": {
+    "s_77bd51c5f7336e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3819c8eb-7e0d-420a-978f-bf40a599f612",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
