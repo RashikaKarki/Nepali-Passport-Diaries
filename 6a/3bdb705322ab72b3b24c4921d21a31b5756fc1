@@ -1,0 +1,19 @@
+assets/js/search.js
+  s_ee653d6f394853::t_2f8410a1422f51 19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6a3bdb705322ab72b3b24c4921d21a31b5756fc1",
+  "prompts": {},
+  "sessions": {
+    "s_ee653d6f394853": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b0465ae9-5605-4b28-a693-aee2633793ef",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}
