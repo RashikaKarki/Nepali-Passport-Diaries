@@ -16,7 +16,7 @@ function matches(card) {
   const d = card.dataset;
   if (d.category !== state.category) return false;
   if (state.region && d.region !== state.region) return false;
-  if (state.visa && !d.visas.split(",").includes(state.visa)) return false;
+  if (state.category === "special" && state.visa && !d.visas.split(",").includes(state.visa)) return false;
   if (state.query && !d.search.includes(state.query)) return false;
   return true;
 }
