@@ -1,0 +1,72 @@
+scripts/issue_to_pr.py
+  s_fae11b87d0b3fc::t_96fb4801a74c05 19,22-23
+  s_fae11b87d0b3fc::t_3ebbee4474cfc6 10
+  s_fae11b87d0b3fc::t_b3afeb5769961d 68
+  s_fae11b87d0b3fc::t_44a996342efcbb 57-59
+  s_fae11b87d0b3fc::t_c3b94a4d382719 88
+  s_fae11b87d0b3fc::t_c15af23ba88bcf 24
+_includes/controls.html
+  s_fae11b87d0b3fc::t_91b88b6004e9e2 7
+  s_fae11b87d0b3fc::t_d02623b0bfc23d 13
+  s_fae11b87d0b3fc::t_2ce077655752a9 20
+.github/ISSUE_TEMPLATE/add-entry.yml
+  s_fae11b87d0b3fc::t_ebedca0a53343a 21
+  s_fae11b87d0b3fc::t_bd7b95d23793f0 101
+  s_fae11b87d0b3fc::t_c83249675c298e 111
+  s_fae11b87d0b3fc::t_70c48d5046897f 106
+index.html
+  s_fae11b87d0b3fc::t_0b8dc142b4a458 12
+scripts/validate_data.py
+  s_fae11b87d0b3fc::t_524b712e155e4d 22,30
+  s_fae11b87d0b3fc::t_63e1f73532307a 122,125,130,132
+assets/css/journal.css
+  s_fae11b87d0b3fc::t_0b04e85aa23b25 14
+  s_fae11b87d0b3fc::t_6765ffd0a26f37 218
+.github/ISSUE_TEMPLATE/update-entry.yml
+  s_fae11b87d0b3fc::t_cacea35bd361de 108
+  s_fae11b87d0b3fc::t_70ecf7c05f6cb4 113
+  s_fae11b87d0b3fc::t_4a4022aaba5003 118,126-132
+  s_fae11b87d0b3fc::t_f10f0a6b204bb2 28
+tests/test_issue_to_pr.py
+  s_fae11b87d0b3fc::t_97bc7b5e00dcf3 61,65,69
+  s_fae11b87d0b3fc::t_d2fede0f25dbf5 122-124
+  s_fae11b87d0b3fc::t_8cfe814f3fa004 103-104,112-119
+  s_fae11b87d0b3fc::t_bdb7640f71f987 9
+  s_fae11b87d0b3fc::t_d71777bd90643d 120-121
+  s_fae11b87d0b3fc::t_cc51ae19058dcf 125-126
+_data/transit_visa.yml
+  s_fae11b87d0b3fc::t_faae114b581742 129,132-136,140
+  s_fae11b87d0b3fc::t_e8a169e0e5539f 156,159-164,168
+  s_fae11b87d0b3fc::t_27d04f8478e508 1-51,58-72,74-76,78-79,85-87,89-99,101-102,105,111,115-125,127-128,130-131,137-139,141-151,153-155,157-158,165-167,169-314
+  s_fae11b87d0b3fc::t_4ed556acad0d82 52-57
+  s_fae11b87d0b3fc::t_a700e951cd3be3 100,103-104,106-110,112-114
+  s_fae11b87d0b3fc::t_2887c164c6e7b1 77,80-84,88
+  s_fae11b87d0b3fc::t_0178c5740fc850 126
+  s_fae11b87d0b3fc::t_b139da5cdb5d38 73
+  s_fae11b87d0b3fc::t_6138ccb4870d3b 152
+_includes/card.html
+  s_fae11b87d0b3fc::t_645ef6ec71f085 10-11
+_includes/hero.html
+  s_fae11b87d0b3fc::t_164f914d1654a7 1
+assets/js/search.js
+  s_fae11b87d0b3fc::t_724b5afdf1d88c 11-17,26
+  s_fae11b87d0b3fc::t_6d840560a9a937 44
+scripts/allowed_sources.yml
+  s_fae11b87d0b3fc::t_b1569f601a9925 65-72,85-87,95-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "57268ecfa23b7b8c6ecb551952b5739ad274452e",
+  "prompts": {},
+  "sessions": {
+    "s_fae11b87d0b3fc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e7688878-c9b6-49be-939c-5c00e2d5665f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
