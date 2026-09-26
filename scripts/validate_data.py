@@ -19,6 +19,7 @@ FILES = {
     "visa_on_arrival.yml": "visa_on_arrival",
     "evisa.yml": "evisa",
     "special_cases.yml": "special",
+    "transit_visa.yml": "transit",
 }
 # Each file's primary status plus the correction/variant statuses it may hold.
 STATUS_VARIANTS = {
@@ -26,6 +27,7 @@ STATUS_VARIANTS = {
     "visa_on_arrival": {"visa_on_arrival", "online_visa_required"},
     "evisa": {"evisa", "evisa_conditional"},
     "special": {"special", "special_restricted"},
+    "transit": {"transit_visa", "transit_visa_restricted"},
 }
 REQUIRED = ("country", "iso", "region", "status", "duration", "conditions", "source")
 REGIONS = {"Africa", "Americas", "Asia", "Caribbean", "Europe", "Middle East", "Oceania"}
@@ -117,17 +119,17 @@ def validate_entry(e, status, allowed_domains):
     if e.get("proof"):
         _validate_proof(e["proof"], errors)
 
-    if e["status"] == "special":
+    if e["status"] in ("special", "transit_visa"):
         for field in ("requires", "benefit", "held_visas"):
             if not e.get(field):
-                errors.append(f"special entries need {field}")
+                errors.append(f"{e['status']} entries need {field}")
         held = e.get("held_visas") or []
         unknown = [v for v in held if v not in HELD_VISAS]
         if unknown:
             errors.append(f"held_visas must be from {sorted(HELD_VISAS)}, got {unknown}")
-    elif e["status"] == "special_restricted":
+    elif e["status"] in ("special_restricted", "transit_visa_restricted"):
         if not e.get("benefit"):
-            errors.append("special_restricted entries need benefit")
+            errors.append(f"{e['status']} entries need benefit")
 
     return errors
 

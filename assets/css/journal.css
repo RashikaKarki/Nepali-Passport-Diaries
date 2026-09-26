@@ -11,6 +11,7 @@
   --stamp-on-arrival: #c8102e;
   --stamp-evisa: #2b4a8b;
   --stamp-special: #6b3fa0;
+  --stamp-transit: #b05a00;
   --serif: "Playfair Display", Georgia, serif;
   --mono: "DM Mono", "Courier New", monospace;
   --text-2xs: 9px;
@@ -214,6 +215,7 @@ a { color: var(--gold); }
 .stamp--visa_on_arrival { color: var(--stamp-on-arrival); }
 .stamp--evisa { color: var(--stamp-evisa); }
 .stamp--special { color: var(--stamp-special); }
+.stamp--transit { color: var(--stamp-transit); }
 .stamp--warning { color: var(--ink-soft); border-style: dashed; transform: rotate(-6deg); }
 
 .summary-line {

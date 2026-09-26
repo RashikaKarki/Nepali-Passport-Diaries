@@ -1,0 +1,314 @@
+# transit_visa.yml — Countries where a Nepali passport needs a visa even to stay
+# airside in the transit zone. `transit_visa` entries can be unlocked by a held
+# visa; `transit_visa_restricted` entries require a visa with no exemption.
+
+- country: United Kingdom
+  iso: GB
+  region: Europe
+  status: transit_visa
+  requires: A valid visa or permanent residence for the US, Canada, Australia or New Zealand; an EEA/Switzerland residence permit or long-stay "D" visa; or a valid Irish biometric visa
+  benefit: Change flights airside without a Direct Airside Transit Visa (DATV)
+  held_visas: [US, Canada, Australia, New Zealand, Ireland]
+  duration: Airside transit only (same day, same airport)
+  conditions:
+    - You arrive and leave by air, depart the same day from the same airport, and hold the documents for your onward destination
+    - Exempt with a valid Australia, Canada, New Zealand or USA visa — you need not be flying to or from that country
+    - Exempt with permanent residence of Australia, Canada, New Zealand or the USA (date/document conditions apply for the US and Canada)
+    - Exempt with an EEA/Switzerland residence permit or long-stay "D" visa
+    - Exempt with a valid Irish biometric visa marked BC or BC BIVS, unless your destination is Ireland
+    - E-visas or e-residence permits count only if the airline can verify them; the Border Force officer makes the final decision
+  proof:
+    nepal_explicitly_named: false  # DATV list is by document type / route, not nationality
+    url: https://www.gov.uk/transit-visa/direct-airside-transit-visa
+    evidence: >
+      GOV.UK (UK Home Office) sets the DATV exemptions by document held: a valid US, Canada,
+      Australia or New Zealand visa or permanent residence, an EEA/Switzerland residence permit
+      or category-D visa, or an Irish BC/BC BIVS biometric visa. Nepali passport holders without
+      one of these need a DATV to transit airside.
+  source:
+    name: UK Home Office (GOV.UK) — Direct Airside Transit Visa
+    url: https://www.gov.uk/transit-visa/direct-airside-transit-visa
+  confidence: high
+  verified: 2026-09-26
+
+- country: Spain
+  iso: ES
+  region: Europe
+  status: transit_visa
+  requires: A valid Schengen visa or any visa/residence card allowing return to an EU/EEA state or Switzerland; or a residence card of Andorra, Canada, the US, Japan or San Marino
+  benefit: Pass through the international zone of a Spanish airport without a Schengen Airport Transit Visa (ATV, Type A)
+  held_visas: [Schengen, Canada, US, Japan]
+  duration: Airside transit up to 24 hours
+  conditions:
+    - Nepal (ordinary passports) was added to Spain's ATV list effective 21 April 2025; diplomatic and official passports are exempt
+    - Exempt with a Schengen visa, or any visa or residence card allowing return to an EU/EEA state or Switzerland
+    - Exempt with a residence card of Andorra, Canada, the US, Japan or San Marino
+    - If your bags are not checked through to the final destination, a full Schengen (Type C) visa is needed
+    - At Madrid, moving from Terminal 1 to Terminal 4S does not count as entering Schengen
+  proof:
+    nepal_explicitly_named: true
+    url: https://www.exteriores.gob.es/Consulados/washington/en/ServiciosConsulares/Paginas/Consular/Visado-de-transito-aeroportuario.aspx
+    evidence: >
+      Verified 2026-09-26 against the page: Spain's Ministry of Foreign Affairs lists Nepal among
+      the nationalities that need a Type A airport transit visa to pass through the international
+      zone of a Spanish airport, and exempts holders of a Schengen visa or Member-State residence
+      card, a residence card of Andorra, Canada, the US, Japan or San Marino, diplomatic passport
+      holders, EU/EEA family members and flight crew. (The 21 April 2025 start date is reported by
+      Spain's MFA and BLS but is not stated on this consular page.)
+  source:
+    name: Ministry of Foreign Affairs of Spain — Airport transit visa
+    url: https://www.exteriores.gob.es/Consulados/washington/en/ServiciosConsulares/Paginas/Consular/Visado-de-transito-aeroportuario.aspx
+  confidence: high
+  verified: 2026-09-26
+
+- country: Belgium
+  iso: BE
+  region: Europe
+  status: transit_visa
+  requires: A valid Schengen visa or an EU/EEA/Switzerland residence permit; or a residence card of Andorra, Canada, Japan, the US or San Marino
+  benefit: Transit the international zone of a Belgian airport without an Airport Transit Visa (ATV, Type A)
+  held_visas: [Schengen, Canada, US, Japan]
+  duration: Airside transit only
+  conditions:
+    - Belgium extends the Schengen ATV to extra nationalities and is reported to include Nepal (reconfirm — see source); Nepali service or special passports are generally exempt
+    - Exempt with a Schengen visa or an EU/EEA/Switzerland residence permit
+    - Exempt with a residence card of Andorra, Canada, Japan, the US or San Marino
+  proof:
+    nepal_explicitly_named: false  # not confirmed on the page (bot-protected); relies on Belgium's national ATV extension
+    url: https://dofi.ibz.be/en/themes/entry/border-control/visa/visa-type-airport-transit-visa
+    evidence: >
+      Belgium applies a national airport-transit-visa extension under Annex 7B of the EU Visa
+      Code, on top of the common Schengen ATV list. Secondary and consular guidance report Nepal
+      among the nationalities Belgium covers, but this was NOT independently confirmed against the
+      primary list — the official page is bot-protected. Reconfirm against Belgium's national ATV
+      list before relying on it.
+  source:
+    name: Belgian Immigration Office — Airport transit visa (Type A)
+    url: https://dofi.ibz.be/en/themes/entry/border-control/visa/visa-type-airport-transit-visa
+  confidence: medium
+  verified: 2026-09-26
+
+- country: Netherlands
+  iso: NL
+  region: Europe
+  status: transit_visa
+  requires: A valid Schengen visa or an EU/EEA/Switzerland residence permit; or a residence card of Andorra, Canada, Japan, the US or San Marino
+  benefit: Transit a Dutch airport without an Airport Transit Visa (ATV, Type A)
+  held_visas: [Schengen, Canada, US, Japan]
+  duration: Airside transit only
+  conditions:
+    - Nepali passport holders need an airport transit visa to transit a Dutch airport; the Netherlands runs a Nepal-specific ATV application route via VFS Global in Kathmandu
+    - Standard Schengen exemptions apply — a Schengen visa, an EU/EEA/Switzerland residence permit, or a residence card of Andorra, Canada, Japan, the US or San Marino
+  proof:
+    nepal_explicitly_named: true
+    url: https://www.netherlandsworldwide.nl/visa-the-netherlands/airport-transit-visa/apply-nepal
+    evidence: >
+      The Government of the Netherlands publishes a Nepal-specific page for applying for an
+      airport transit visa ("Applying for an airport transit visa for the Netherlands in Nepal"),
+      and Nepal appears on the Dutch ATV-required nationality list; Nepali applicants apply
+      through VFS Global in Kathmandu. This is a national ATV extension under Annex 7B of the EU
+      Visa Code.
+  source:
+    name: Government of the Netherlands — Airport transit visa (apply from Nepal)
+    url: https://www.netherlandsworldwide.nl/visa-the-netherlands/airport-transit-visa/apply-nepal
+  confidence: high
+  verified: 2026-09-26
+
+- country: Luxembourg
+  iso: LU
+  region: Europe
+  status: transit_visa
+  requires: A valid Schengen visa or an EU/EEA/Switzerland residence permit; or a residence card of Andorra, Canada, Japan, the US or San Marino
+  benefit: Transit the international zone of Luxembourg airport without an Airport Transit Visa (ATV, Type A)
+  held_visas: [Schengen, Canada, US, Japan]
+  duration: Airside transit only
+  conditions:
+    - Luxembourg extends the Schengen ATV to extra nationalities and is reported to include Nepal (reconfirm — see source)
+    - Standard Schengen exemptions apply — a Schengen visa, an EU/EEA/Switzerland residence permit, or a residence card of Andorra, Canada, Japan, the US or San Marino
+  proof:
+    nepal_explicitly_named: false  # the cited page defines the Type A visa but defers the country list to a separate document
+    url: https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers/entree-visa.html
+    evidence: >
+      Luxembourg applies a national airport-transit-visa extension under Annex 7B of the EU Visa
+      Code, on top of the common Schengen ATV list. Secondary and consular guidance report Nepal
+      among the nationalities it covers, but the cited page only defines the Type A visa and
+      defers the country list to a separate document, so Nepal's inclusion was NOT independently
+      confirmed here. Reconfirm against Luxembourg's national ATV list before relying on it.
+  source:
+    name: Luxembourg Government (guichet.public.lu) — Entry and visa
+    url: https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers/entree-visa.html
+  confidence: medium
+  verified: 2026-09-26
+
+- country: Romania
+  iso: RO
+  region: Europe
+  status: transit_visa
+  requires: A valid Schengen visa or an EU/EEA/Switzerland residence permit; or a residence card of Andorra, Canada, Japan, the US or San Marino
+  benefit: Transit the international zone of a Romanian airport without an Airport Transit Visa (ATV, Type A)
+  held_visas: [Schengen, Canada, US, Japan]
+  duration: Airside transit only (single airport)
+  conditions:
+    - Romania extends the Schengen ATV to extra nationalities and is reported to include Nepal (reconfirm — see source)
+    - The ATV does not allow you to leave the transit zone; transit through more than one airport needs a Type C visa
+    - Standard Schengen exemptions apply — a Schengen visa, an EU/EEA/Switzerland residence permit, or a residence card of Andorra, Canada, Japan, the US or San Marino
+  proof:
+    nepal_explicitly_named: false  # page returned 503 to automated checks; Nepal's inclusion not independently confirmed
+    url: https://www.mae.ro/en/node/64417
+    evidence: >
+      Romania applies a national airport-transit-visa extension under Annex 7B of the EU Visa
+      Code, on top of the common Schengen ATV list, and its guidance notes the ATV does not
+      permit leaving the transit zone (multi-airport transit needs a Type C visa). Secondary
+      guidance reports Nepal among the nationalities it covers, but the page was unreachable to
+      automated checks, so Nepal's inclusion was NOT independently confirmed. Reconfirm against
+      Romania's national ATV list before relying on it.
+  source:
+    name: Ministry of Foreign Affairs of Romania — Airport transit visa
+    url: https://www.mae.ro/en/node/64417
+  confidence: medium
+  verified: 2026-09-26
+
+- country: Mexico
+  iso: MX
+  region: Americas
+  status: transit_visa
+  requires: A valid visa or permanent residence from the US, Canada, Japan, the UK or a Schengen state (or permanent residence of a Pacific Alliance state)
+  benefit: Connect through a Mexican airport without a Mexican visa
+  held_visas: [US, Canada, Japan, UK, Schengen]
+  duration: Airport connection
+  conditions:
+    - Since 22 October 2023, visa-national passengers connecting through a Mexican airport must already hold the required document before boarding
+    - Exempt with a valid visa or permanent residence from the US, Canada, Japan, the UK or a Schengen country
+    - Official wording is "valid and current"; a used multiple-entry visa is the safest option
+  proof:
+    nepal_explicitly_named: false  # rule applies by document held, to all visa nationals
+    url: https://www.gob.mx/sre/prensa/information-for-foreign-nationals-transiting-through-mexico-s-airports?idiom=en
+    evidence: >
+      Mexico's Secretariat of Foreign Affairs (SRE, gob.mx) states that since 22 October 2023 any
+      foreign national connecting through a Mexican airport must hold a Mexican visa unless they
+      carry a valid visa or permanent residence from the US, Canada, Japan, the UK or a Schengen
+      state — the rule is nationality-agnostic and so covers Nepali passports.
+  source:
+    name: Secretariat of Foreign Affairs of Mexico (SRE) — Transiting through Mexico's airports
+    url: https://www.gob.mx/sre/prensa/information-for-foreign-nationals-transiting-through-mexico-s-airports?idiom=en
+  confidence: high
+  verified: 2026-09-26
+
+- country: New Zealand
+  iso: NZ
+  region: Oceania
+  status: transit_visa
+  requires: An NZeTA (accepted only when transiting to or from Australia) or a valid New Zealand visa
+  benefit: Transit Auckland Airport without a Transit Visa
+  held_visas: [Australia]
+  duration: Transit under 24 hours, Auckland only
+  conditions:
+    - Nepal is not on New Zealand's transit-visa waiver list
+    - You may use an NZeTA instead of a Transit Visa only if you are transiting to or from Australia
+    - Only Auckland has a transit area; you must stay under 24 hours and remain airside — no baggage collection and no accommodation
+    - A valid New Zealand visa also covers transit
+  proof:
+    nepal_explicitly_named: false  # transit-waiver list is by nationality/route
+    url: https://www.immigration.govt.nz/visit/transiting-through-new-zealand/
+    evidence: >
+      Immigration New Zealand states that travellers not from a transit-visa-waiver country need
+      a Transit Visa to transit Auckland, and may instead use an NZeTA only when transiting to or
+      from Australia. Nepal is not on the waiver list.
+  source:
+    name: Immigration New Zealand — Transiting through New Zealand
+    url: https://www.immigration.govt.nz/visit/transiting-through-new-zealand/
+  confidence: high
+  verified: 2026-09-26
+
+- country: United States
+  iso: US
+  region: Americas
+  status: transit_visa_restricted
+  benefit: None — a C-1 transit visa (or a B-1/B-2) is always required; there is no visa-free transit for Nepali passport holders
+  duration: Not available — visa required for any connection
+  conditions:
+    - The Transit Without Visa program was suspended in 2003 and has never been restored
+    - Only Visa Waiver Program nationals can transit without a visa; Nepal is not a VWP country
+    - Apply for a C-1 transit visa (or a B-1/B-2 visitor visa) before travelling
+  proof:
+    nepal_explicitly_named: false  # applies to all non-VWP visa nationals
+    url: https://travel.state.gov/content/travel/en/us-visas/other-visa-categories/transit.html
+    evidence: >
+      The US Department of State (travel.state.gov) requires a C-1 transit visa for immediate and
+      continuous transit through the United States, with no transit-without-visa exemption for
+      nationals who normally need a visa, such as Nepalis.
+  source:
+    name: U.S. Department of State — Transit (C) visas
+    url: https://travel.state.gov/content/travel/en/us-visas/other-visa-categories/transit.html
+  confidence: high
+  verified: 2026-09-26
+
+- country: Canada
+  iso: CA
+  region: Americas
+  status: transit_visa_restricted
+  benefit: None — a transit visa is required for any air connection of 48 hours or less (the visa itself is free)
+  duration: Connections up to 48 hours
+  conditions:
+    - Visa-required nationals need a transit visa to change planes at a Canadian airport
+    - The Transit Without Visa and China Transit programs do not cover Nepal
+    - The transit visa is free but must be obtained before travelling
+  proof:
+    nepal_explicitly_named: false  # applies to all visa-required nationals
+    url: https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/transit/transit-visa/who-needs-transit-visa.html
+    evidence: >
+      Immigration, Refugees and Citizenship Canada (canada.ca) states that visa-required
+      nationals need a (free) transit visa to transit a Canadian airport, and that the visa-free
+      transit programs cover only specific nationalities and US-bound routes — not Nepal.
+  source:
+    name: Immigration, Refugees and Citizenship Canada — Who needs a transit visa
+    url: https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/transit/transit-visa/who-needs-transit-visa.html
+  confidence: high
+  verified: 2026-09-26
+
+- country: Australia
+  iso: AU
+  region: Oceania
+  status: transit_visa_restricted
+  benefit: None — a Transit visa (subclass 771) is required even to stay in the transit lounge (the visa is free)
+  duration: Up to 72 hours
+  conditions:
+    - Visa-free transit applies only to listed countries; Nepal is not on the list
+    - Required even if you remain on the same aircraft
+    - Needs a confirmed onward booking within 72 hours and the right to enter your next country
+  proof:
+    nepal_explicitly_named: false  # visa-free transit list is by nationality
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/transit-771
+    evidence: >
+      The Australian Department of Home Affairs (immi.homeaffairs.gov.au) requires a Transit visa
+      (subclass 771) — free, valid up to 72 hours — for travellers not covered by visa-free
+      transit; Nepal is not on the visa-free transit list.
+  source:
+    name: Australian Department of Home Affairs — Transit visa (subclass 771)
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/transit-771
+  confidence: high
+  verified: 2026-09-26
+
+- country: Ireland
+  iso: IE
+  region: Europe
+  status: transit_visa_restricted
+  benefit: None in practice — Nepal needs an Irish transit visa, and almost every connection requires a full entry visa
+  duration: Airside only in Dublin Terminal 2, 04:00–20:00 same day
+  conditions:
+    - Nepal is on Ireland's transit-visa-required list
+    - A connection counts as airside only if both flights are in Dublin Terminal 2, between 04:00 and 20:00, on the same day
+    - Any other connection requires a full Irish entry visa; Irish airports also close overnight
+  proof:
+    nepal_explicitly_named: false  # this page states the rule; Nepal is on Ireland's separate transit-visa list
+    url: https://www.irishimmigration.ie/at-the-border/transit-including-transfer-visa-advice/
+    evidence: >
+      Irish Immigration Service (irishimmigration.ie) states transit-visa-required nationals need
+      an Irish transit visa, and that a connection is treated as airside only when both flights
+      are in Dublin Terminal 2 between 04:00 and 20:00 the same day — otherwise a full entry visa
+      is required. Nepal is on Ireland's transit-visa-required list.
+  source:
+    name: Irish Immigration Service — Transit (including transfer) visa advice
+    url: https://www.irishimmigration.ie/at-the-border/transit-including-transfer-visa-advice/
+  confidence: medium
+  verified: 2026-09-26

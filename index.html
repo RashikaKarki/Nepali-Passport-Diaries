@@ -9,6 +9,7 @@ layout: default
   {% for entry in site.data.visa_on_arrival %}{% include card.html entry=entry category="visa_on_arrival" label="On arrival" %}{% endfor %}
   {% for entry in site.data.evisa %}{% include card.html entry=entry category="evisa" label="eVisa" %}{% endfor %}
   {% for entry in site.data.special_cases %}{% include card.html entry=entry category="special" label="With visa" %}{% endfor %}
+  {% for entry in site.data.transit_visa %}{% include card.html entry=entry category="transit" label="Transit visa" %}{% endfor %}
   <p class="empty" id="empty" hidden>No destinations match — try a different search.</p>
 </main>
 

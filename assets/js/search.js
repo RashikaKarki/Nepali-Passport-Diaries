@@ -8,6 +8,13 @@ const regionSelect = document.getElementById("region");
 const visaFilter = document.getElementById("visa-filter");
 const emptyNote = document.getElementById("empty");
 
+// Categories whose entries unlock access via a held visa, filterable by chip.
+const VISA_FILTER_CATEGORIES = ["special", "transit"];
+
+function usesVisaFilter(category) {
+  return VISA_FILTER_CATEGORIES.includes(category);
+}
+
 function isoToFlag(iso) {
   return Array.from(iso, c => String.fromCodePoint(127397 + c.charCodeAt(0))).join("");
 }
@@ -16,7 +23,7 @@ function matches(card) {
   const d = card.dataset;
   if (d.category !== state.category) return false;
   if (state.region && d.region !== state.region) return false;
-  if (state.category === "special" && state.visa && !d.visas.split(",").includes(state.visa)) return false;
+  if (usesVisaFilter(state.category) && state.visa && !d.visas.split(",").includes(state.visa)) return false;
   if (state.query && !d.search.includes(state.query)) return false;
   return true;
 }
@@ -34,7 +41,7 @@ function render() {
     else card.open = false;
   }
   emptyNote.hidden = visible > 0;
-  visaFilter.hidden = state.category !== "special";
+  visaFilter.hidden = !usesVisaFilter(state.category);
 }
 
 tabs.forEach(tab =>

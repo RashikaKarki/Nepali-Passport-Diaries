@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from validate_data import DATA_DIR, validate_entry
+from validate_data import DATA_DIR, FILES, validate_entry
 
 NO_RESPONSE = "_No response_"
 
@@ -16,7 +16,11 @@ CATEGORY_FILES = {
     "Visa on arrival": ("visa_on_arrival.yml", "visa_on_arrival"),
     "eVisa": ("evisa.yml", "evisa"),
     "Special case (extra access with another country's visa)": ("special_cases.yml", "special"),
+    "Transit visa (visa needed even to stay airside)": ("transit_visa.yml", "transit_visa"),
 }
+
+# Categories whose entries carry requires / benefit / held_visas exemption fields.
+HELD_VISA_STATUSES = ("special", "transit_visa")
 
 FIELD_ORDER = (
     "country", "iso", "region", "status", "requires", "benefit", "held_visas",
@@ -50,9 +54,9 @@ def build_entry(fields):
         "iso": (fields.get("ISO code") or "").upper() or None,
         "region": fields.get("Region"),
         "status": status,
-        "requires": fields.get("Requires (special cases only)"),
-        "benefit": fields.get("Benefit (special cases only)"),
-        "held_visas": _checked(fields.get("Held visas (special cases only)")) or None,
+        "requires": fields.get("Requires (special & transit cases)"),
+        "benefit": fields.get("Benefit (special & transit cases)"),
+        "held_visas": _checked(fields.get("Held visas (special & transit cases)")) or None,
         "duration": fields.get("Duration"),
         "fee": fields.get("Fee"),
         "conditions": [c.strip() for c in (fields.get("Conditions (one per line)") or "").splitlines() if c.strip()] or None,
@@ -61,7 +65,7 @@ def build_entry(fields):
         "source": {"name": fields.get("Official source name"), "url": fields.get("Official source URL")},
         "verified": fields.get("Date you verified (YYYY-MM-DD)"),
     }
-    if status != "special":
+    if status not in HELD_VISA_STATUSES:
         raw["requires"] = raw["benefit"] = raw["held_visas"] = None
     entry = {k: raw[k] for k in FIELD_ORDER if raw[k] is not None}
     return filename, entry
@@ -81,7 +85,7 @@ def main():
         sys.exit("Could not read the Category field — please edit the issue using the form structure.")
 
     filename, entry = build_entry(fields)
-    errors = validate_entry(entry, entry["status"], None)
+    errors = validate_entry(entry, FILES[filename], None)
     if errors:
         sys.exit("The submission has problems:\n" + "\n".join(f"- {e}" for e in errors))
 
