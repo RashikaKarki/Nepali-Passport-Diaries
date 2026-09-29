@@ -7,6 +7,8 @@
 {% when "online_visa_required" %}{% assign stamp_label = "Online visa" %}{% assign stamp_warning = true %}
 {% when "evisa_conditional" %}{% assign stamp_label = "Conditional" %}{% assign stamp_warning = true %}
 {% when "special_restricted" %}{% assign stamp_label = "No shortcut" %}{% assign stamp_warning = true %}
+{% when "transit_visa" %}{% assign stamp_label = "Transit visa" %}{% assign stamp_warning = true %}
+{% when "transit_visa_restricted" %}{% assign stamp_label = "No exemption" %}{% assign stamp_warning = true %}
 {% else %}{% assign stamp_label = include.label %}
 {% endcase %}
 <details class="card" data-category="{{ include.category }}" data-region="{{ e.region }}"

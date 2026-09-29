@@ -25,6 +25,7 @@ body:
         - Visa on arrival
         - eVisa
         - Special case (extra access with another country's visa)
+        - Transit visa (visa needed even to stay airside)
     validations:
       required: true
   - type: input
@@ -104,17 +105,17 @@ body:
   - type: input
     id: requires
     attributes:
-      label: Requires (special cases only)
+      label: Requires (special & transit cases)
       placeholder: Valid US B1/B2 visa
   - type: input
     id: benefit
     attributes:
-      label: Benefit (special cases only)
+      label: Benefit (special & transit cases)
       placeholder: Enter without a local visa for up to 180 days
   - type: checkboxes
     id: held_visas
     attributes:
-      label: Held visas (special cases only)
+      label: Held visas (special & transit cases)
       options:
         - label: US
         - label: Schengen
@@ -122,6 +123,13 @@ body:
         - label: UK
         - label: Canada
         - label: Australia
+        - label: New Zealand
+        - label: Ireland
+        - label: South Korea
+        - label: Israel
+        - label: UAE
+        - label: Saudi Arabia
+        - label: GCC
   - type: checkboxes
     id: confirmation
     attributes:

@@ -1,4 +1,4 @@
-{% assign all_entries = site.data.visa_free | concat: site.data.visa_on_arrival | concat: site.data.evisa | concat: site.data.special_cases %}
+{% assign all_entries = site.data.visa_free | concat: site.data.visa_on_arrival | concat: site.data.evisa | concat: site.data.special_cases | concat: site.data.transit_visa %}
 {% assign verified_dates = all_entries | map: "verified" | compact %}
 {% assign checked_dates = all_entries | map: "checked" | compact %}
 {% assign latest = verified_dates | concat: checked_dates | sort | last %}
