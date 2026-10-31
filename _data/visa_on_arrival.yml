@@ -96,7 +96,7 @@
   extension: Extendable in-country
   source:
     name: Sri Lanka eVisa / ETA (Department of Immigration & Emigration)
-    url: https://www.srilankaevisa.lk/
+    url: https://eta.gov.lk/slvisa/
   confidence: high
   checked: 2026-08-09
   verify_before_travel: true
@@ -142,7 +142,7 @@
       Passport Index (Aug 2026) agrees.
   source:
     name: Bangladesh Department of Immigration & Passports
-    url: https://www.dip.gov.bd/
+    url: https://dip.gov.bd/
   confidence: high
   verified: 2026-08-09
   verify_before_travel: true
@@ -310,8 +310,8 @@
       Samoa issues a gratis 90-day Visitor's Permit on arrival to all visitors (except US
       citizens resident in American Samoa) — a universal policy covering Nepali passports.
   source:
-    name: Samoa Immigration
-    url: https://www.samoaimmigration.gov.ws/
+    name: Samoa Immigration (Ministry of the Prime Minister and Cabinet)
+    url: https://mpmc.gov.ws/divisions/immigration/
   confidence: high
   verified: 2026-08-09
   verify_before_travel: true

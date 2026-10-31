@@ -90,8 +90,8 @@
   conditions:
     - Apply online before travel; passport valid ≥ 6 months, onward ticket, funds
   source:
-    name: Sri Lanka eVisa (Dept. of Immigration & Emigration)
-    url: https://www.srilankaevisa.lk/
+    name: Sri Lanka ETA (Dept. of Immigration & Emigration)
+    url: https://eta.gov.lk/slvisa/
   confidence: high
   verified: 2026-08-09
 
@@ -416,7 +416,7 @@
     - Apply online before travel; carry the printed eVisa approval
   source:
     name: PNG ICA eVisa (official)
-    url: https://evisa.ica.gov.pg/
+    url: https://evisa.ica.gov.pg/evisa/
   confidence: medium
   checked: 2026-08-09
 
