@@ -194,19 +194,20 @@
     - Confirm the reported "entry clearance" practice with Gambia Immigration or your airline before flying
   proof:
     nepal_explicitly_named: true
-    url: https://leaftravelsandtour.com/visa-guide-nepali-passport-holders-2026/
+    url: https://gid.gov.gm/visa/
     evidence: >
-      Recent (Jan 2026) Nepal-based travel guidance and multiple 2026 aggregators
-      consistently list The Gambia as visa-free for Nepali passports for up to 90 days.
-      No official Gambian government page naming Nepal was located, so this rests on
-      concordant recent secondary sources only.
+      Recent (Jan 2026) Nepal-based travel guidance and multiple 2026 aggregators list The
+      Gambia as visa-free for Nepali passports for up to 90 days. However, the Gambia
+      Immigration Department's own visa page (checked 2026-10-31) lists Nepal under
+      "Countries that need both visa and clearance". Treat the visa-free reports as
+      unconfirmed and check with Gambia Immigration or your airline before booking.
   notes: Some travellers report an "entry clearance" requirement arranged via airline/host.
     Confirm with Gambia Immigration or your airline (IATA Timatic) before flying.
   source:
     name: Gambia Immigration Department
-    url: https://www.gid.gov.gm/
+    url: https://gid.gov.gm/
   confidence: medium
-  checked: 2026-08-09
+  checked: 2026-10-31
   verify_before_travel: true
 
 - country: Palestinian Territories

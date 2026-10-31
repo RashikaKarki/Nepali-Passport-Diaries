@@ -123,22 +123,23 @@
   held_visas: [Schengen, Canada, US, Japan]
   duration: Airside transit only
   conditions:
-    - Luxembourg extends the Schengen ATV to extra nationalities and is reported to include Nepal (reconfirm — see source)
+    - Luxembourg extends the Schengen ATV to extra nationalities and explicitly lists Nepal among them
     - Standard Schengen exemptions apply — a Schengen visa, an EU/EEA/Switzerland residence permit, or a residence card of Andorra, Canada, Japan, the US or San Marino
   proof:
-    nepal_explicitly_named: false  # the cited page defines the Type A visa but defers the country list to a separate document
-    url: https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers/entree-visa.html
+    nepal_explicitly_named: true
+    url: https://ankara.mae.lu/en/service_citoyens/visa-types.html
     evidence: >
       Luxembourg applies a national airport-transit-visa extension under Annex 7B of the EU Visa
-      Code, on top of the common Schengen ATV list. Secondary and consular guidance report Nepal
-      among the nationalities it covers, but the cited page only defines the Type A visa and
-      defers the country list to a separate document, so Nepal's inclusion was NOT independently
-      confirmed here. Reconfirm against Luxembourg's national ATV list before relying on it.
+      Code, on top of the common Schengen ATV list. The Luxembourg Ministry of Foreign Affairs
+      visa-types page lists the nationalities that need an airport transit visa when passing
+      through the international transit area of Luxembourg airport as Angola, Guinea,
+      Guinea-Bissau, Nepal, Sudan, Syria and South Sudan. The previously cited guichet.public.lu
+      page has been removed.
   source:
-    name: Luxembourg Government (guichet.public.lu) — Entry and visa
-    url: https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers/entree-visa.html
+    name: Luxembourg Ministry of Foreign Affairs (Embassy in Ankara) — Visa types
+    url: https://ankara.mae.lu/en/service_citoyens/visa-types.html
   confidence: medium
-  verified: 2026-09-26
+  verified: 2026-10-31
 
 - country: Romania
   iso: RO
