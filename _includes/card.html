@@ -38,15 +38,15 @@
       {% if e.proof.caveat %}<p><strong>Caveat:</strong> {{ e.proof.caveat }}</p>{% endif %}
       <p>
         <span class="named{% if e.proof.nepal_explicitly_named %} named--yes{% endif %}">{% if e.proof.nepal_explicitly_named %}✓ Nepal explicitly named{% else %}Covered by a general rule{% endif %}</span>
-        · <a href="{{ e.proof.url }}" rel="noopener">Proof ↗</a>{% if e.proof.secondary_url %} · <a href="{{ e.proof.secondary_url }}" rel="noopener">More ↗</a>{% endif %}
+        · <a href="{{ e.proof.url }}" target="_blank" rel="noopener">Proof ↗</a>{% if e.proof.secondary_url %} · <a href="{{ e.proof.secondary_url }}" target="_blank" rel="noopener">More ↗</a>{% endif %}
       </p>
     </div>
     {% endif %}
     <p class="provenance">
       {% if e.verified %}Verified {{ e.verified | date: "%Y-%m-%d" }}{% else %}Checked {{ e.checked | date: "%Y-%m-%d" }}{% endif %} ·
-      <a href="{{ e.source.url }}" rel="noopener">{{ e.source.name }} ↗</a>
+      <a href="{{ e.source.url }}" target="_blank" rel="noopener">{{ e.source.name }} ↗</a>
       <br>Rules change — check the official page above before booking.
     </p>
-    <a class="suggest" href="{{ site.repo }}/issues/new?template=update-entry.yml&title=Update%3A%20{{ e.country | url_encode }}">Spotted an error? Suggest a change</a>
+    <a class="suggest" target="_blank" rel="noopener" href="{{ site.repo }}/issues/new?template=update-entry.yml&title=Update%3A%20{{ e.country | url_encode }}">Spotted an error? Suggest a change</a>
   </div>
 </details>
