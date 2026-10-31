@@ -1,0 +1,21 @@
+_includes/site-footer.html
+  s_b447883ccb575c::t_0421b45f5dac1a 5-7
+_includes/card.html
+  s_b447883ccb575c::t_0421b45f5dac1a 41,47,50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "eca647e0c8536fa4c87c9545eea3a682600fcc4f",
+  "prompts": {},
+  "sessions": {
+    "s_b447883ccb575c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5c62d49e-7dfd-43aa-8c1a-c6d69a160fda",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
