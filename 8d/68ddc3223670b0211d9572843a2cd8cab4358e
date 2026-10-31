@@ -1,0 +1,30 @@
+_data/evisa.yml
+  s_b447883ccb575c::t_cd3c255b7c8a13 93-94,419
+_data/special_cases.yml
+  s_b447883ccb575c::t_cd3c255b7c8a13 154
+_data/visa_free.yml
+  s_b447883ccb575c::t_cd3c255b7c8a13 197,199-203,208,210
+_data/transit_visa.yml
+  s_b447883ccb575c::t_cd3c255b7c8a13 126,129-130,133-137,139-140,142
+_data/visa_on_arrival.yml
+  s_b447883ccb575c::t_cd3c255b7c8a13 145,313-314
+  s_b447883ccb575c::t_11497c02cdd910 99
+scripts/allowed_sources.yml
+  s_b447883ccb575c::t_cd3c255b7c8a13 12,72,77,94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8d68ddc3223670b0211d9572843a2cd8cab4358e",
+  "prompts": {},
+  "sessions": {
+    "s_b447883ccb575c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5c62d49e-7dfd-43aa-8c1a-c6d69a160fda",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
